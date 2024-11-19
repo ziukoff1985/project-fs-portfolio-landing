@@ -38,5 +38,8 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M20 14a4.003 4.003 0 0 1-4 4 4.003 4.003 0 0 1-4-4 4.003 4.003 0 0 1 4-4 4.003 4.003 0 0 1 4 4z"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M26 14c0 9.523-10 15-10 15S6 23.523 6 14a10.001 10.001 0 0 1 20 0z"/>
     </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path d="M5.334 23.027v-1.333h21.333v1.333h-21.333zM5.334 16.667v-1.333h21.333v1.333h-21.333zM5.334 10.307v-1.333h21.333v1.333h-21.333z"></path>
+    </symbol>
   </defs>
 </svg>
