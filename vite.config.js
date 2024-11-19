@@ -3,7 +3,6 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
-import imagemin from 'vite-plugin-imagemin';
 
 export default defineConfig(({ command }) => {
   return {
@@ -43,33 +42,6 @@ export default defineConfig(({ command }) => {
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
-      }),
-      imagemin({
-        gifsicle: {
-          optimizationLevel: 7,
-        },
-        optipng: {
-          enabled: true,
-        },
-        mozjpeg: {
-          quality: 80,
-        },
-        pngquant: {
-          quality: [0.65, 0.9],
-          speed: 4,
-        },
-        svgo: {
-          plugins: [
-            {
-              name: 'preset-default',
-              params: {
-                overrides: {
-                  removeViewBox: false,
-                },
-              },
-            },
-          ],
-        },
       }),
     ],
   };
