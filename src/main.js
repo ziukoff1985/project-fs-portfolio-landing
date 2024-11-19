@@ -6,4 +6,4 @@ import './js/work-together';
 import './js/mob-menu';
 import './js/modal-window';
 
-import './js/mod';
+import './js/changes-mod';
