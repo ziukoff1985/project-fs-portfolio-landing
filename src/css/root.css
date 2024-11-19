@@ -3,12 +3,14 @@
   --color-text-secondary: #00b068;
 
   --background-0: #fff;
+  --background-1: #e4e5e6;
 }
 .theme-dark {
   --color-text-primary: #f0f0f0;
   --color-text-secondary: #14c57c;
 
   --background-0: #1e2023;
+  --background-1: #2a2d32;
 }
 
 :root {
