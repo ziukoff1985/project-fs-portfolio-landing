@@ -74,10 +74,23 @@ img {
   color: var(--color-text-secondary);
 }
 
+section {
+  padding-bottom: 80px;
+}
 @media (min-width: 768px) {
   .title {
     font-size: 108px;
     line-height: 1.148;
     letter-spacing: 0.02em;
+  }
+
+  section {
+    padding-bottom: 124px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    padding-bottom: 164px;
   }
 }
