@@ -15,7 +15,7 @@
   width: 24px;
   height: 24px;
   fill: none;
-  stroke: var(--background-3);
+  stroke: var(--color-text-secondary);
   stroke-width: 2;
 }
 
