@@ -96,6 +96,10 @@
   }
 
   .benefits-image {
+    background-image: url('/../img/benefits-img/benefits-decor-bg-@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: block;
     position: absolute;
     width: 526px;
@@ -105,10 +109,11 @@
     right: 32px;
   }
 
-  .background-svg-icon {
-    width: 100%;
-    height: 100%;
-    fill: #00b068;
-    filter: blur(4.4px);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .benefits-image {
+      background-image: url('/../img/benefits-img/benefits-decor-bg-@2x.png');
+    }
   }
 }
