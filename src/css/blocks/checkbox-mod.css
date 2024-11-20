@@ -1,21 +1,21 @@
-#header .knobs,
-#header .layer {
+.knobs-changes-mod,
+.layer-changes-mod {
   position: absolute;
   inset: 0;
 }
 
-#header .knobs {
+.knobs-changes-mod {
   z-index: 2;
   display: flex;
   align-items: center;
 }
 
-#header .knobs > .icon {
+.knobs-changes-mod > .icon-moon {
   position: absolute;
   left: 38px;
   display: none;
 }
-#header .layer {
+.layer-changes-mod {
   width: 100%;
   background-color: var(--background-1);
   transition: 0.3s ease all;
@@ -23,14 +23,14 @@
   transition: all 250ms ease-in-out;
 }
 
-#header .button {
+.button-changes-mod {
   position: relative;
   width: 64px;
   height: 32px;
   overflow: hidden;
 }
 
-#header .checkbox {
+.checkbox {
   position: relative;
   width: 100%;
   height: 100%;
@@ -41,12 +41,12 @@
   z-index: 3;
 }
 
-#header .button.r,
-#header .button.r .layer {
+.button-changes-mod.r,
+.button-changes-mod.r .layer-changes-mod {
   border-radius: 100px;
 }
 
-#button-3 .knobs:before {
+#button-3 .knobs-changes-mod:before {
   content: '';
   display: flex;
   align-items: center;
@@ -62,17 +62,17 @@
   transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
 }
 
-#button-3 .checkbox:active + .knobs:before {
+#button-3 .checkbox:active + .knobs-changes-mod:before {
   width: 60px;
   border-radius: 100px;
 }
 
-#button-3 .checkbox:checked:active + .knobs:before {
+#button-3 .checkbox:checked:active + .knobs-changes-mod:before {
   margin-left: -26px;
 }
 
-#button-3 .checkbox:checked + .knobs:before,
-#button-3 .checkbox:checked + .knobs > .icon {
+#button-3 .checkbox:checked + .knobs-changes-mod:before,
+#button-3 .checkbox:checked + .knobs-changes-mod > .icon-moon {
   display: block;
   content: '';
   left: 34px;
