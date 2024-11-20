@@ -21,6 +21,11 @@
 
 #header .icon {
   fill: var(--color-text-primary);
+  transition: all 250ms ease-in-out;
+}
+
+#header button:is(:hover, :focus) .icon {
+  fill: var(--color-text-secondary);
 }
 
 #header nav {
@@ -51,5 +56,10 @@
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.03em;
+    transition: all 250ms ease-in-out;
+  }
+
+  #header nav > a:is(:hover, :focus) {
+    color: var(--color-text-secondary);
   }
 }
