@@ -106,9 +106,54 @@
   color: var(--color-text-secondary);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
+  .hero-btn {
+    width: 165px;
+    left: 140px;
+    transition: all 250ms ease-in-out;
+  }
+
+  .hero-btn-container:hover .hero-btn {
+    width: 280px;
+    left: 0;
+  }
+
+  .hero-btn-container:hover .hero-btn-text {
+    right: 30px;
+  }
+
+  .hero-btn-text {
+    width: 230px;
+    position: absolute;
+    right: 75px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media (max-width: 355px) {
   .hero-title {
     font-size: 57px;
+  }
+
+  .hero-btn {
+    width: 165px;
+    left: 100px;
+  }
+
+  .hero-btn-container:hover .hero-btn {
+    width: 250px;
+    left: 0;
+  }
+
+  .hero-btn-container:hover .hero-btn-text {
+    right: 10px;
+  }
+
+  .hero-btn-text {
+    width: 230px;
+    position: absolute;
+    right: 35px;
+    transition: all 250ms ease-in-out;
   }
 }
 
