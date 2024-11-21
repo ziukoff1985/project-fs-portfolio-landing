@@ -63,7 +63,7 @@
 }
 
 .hero-btn-icon {
-  fill: var(--color-text-secondary);
+  fill: var(--background-3);
   margin-right: 12px;
   transition: fill 250ms ease-in-out;
 }
@@ -104,6 +104,12 @@
 
 .hero-social-link:hover {
   color: var(--color-text-secondary);
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 57px;
+  }
 }
 
 @media screen and (min-width: 768px) {
