@@ -1,36 +1,30 @@
 .tech-skills {
   min-height: 324px;
-  position: relative; /* Для подальшого позиціонування елементів */
-  /* background-color: #f8f8f8; Світлий фон для виділення секції */
-  overflow: hidden; /* Сховаємо будь-які вихідні елементи */
+  position: relative;
+  overflow: hidden;
 }
 
 .marquee {
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Забезпечує приховування тексту поза межами блоку */
+  overflow: hidden;
   background-color: #bcdfd1;
   padding: 32px 0px;
   width: 100%;
   height: 104px;
-  z-index: 2; /* Робимо його зверху */
+  z-index: 2;
 }
 
 .marquee__inner {
-  display: flex; /* Елементи вирівняні в ряд */
-  animation: marquee-animation 15s linear infinite; /* Анімація руху */
-}
-
-.marquee__inner::before {
-  content: ''; /* Імітація повторення вмісту */
-  display: block;
+  display: flex;
+  animation: marquee-animation 15s linear infinite;
 }
 
 .marquee__line {
   display: flex;
-  gap: 16px; /* Відступ між назвами технологій */
-  position: relative; /* Для роботи з псевдоелементом */
+  gap: 16px;
+  position: relative;
   align-items: center;
   font-size: 32px;
   font-weight: 500;
@@ -38,7 +32,7 @@
   letter-spacing: 0.02em;
   color: #292929;
   text-transform: uppercase;
-  white-space: nowrap; /* Забороняє перенос тексту */
+  white-space: nowrap;
 }
 
 .marquee__line::after {
@@ -46,21 +40,21 @@
   width: 8px;
   height: 8px;
   border-radius: 2px;
-  background-color: #00b068; /* Колір розділювача */
-  margin-right: 16px; /* Відстань між останнім елементом і псевдоелементом */
+  background-color: #00b068;
+  margin-right: 16px;
 }
 
 .marquee__line__tilted {
   display: flex;
-  gap: 16px; /* Відступ між назвами технологій */
+  gap: 16px;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #00b068;
   text-transform: uppercase;
-  white-space: nowrap; /* Забороняє перенос тексту */
-  position: relative; /* Для роботи з псевдоелементом */
+  white-space: nowrap;
+  position: relative;
 }
 
 .marquee__line__tilted::after {
@@ -68,8 +62,8 @@
   width: 8px;
   height: 8px;
   border-radius: 2px;
-  background-color: #292929; /* Колір розділювача */
-  margin-right: 16px; /* Відстань між останнім елементом і псевдоелементом */
+  background-color: #292929;
+  margin-right: 16px;
 }
 
 @keyframes marquee-animation {
@@ -77,34 +71,30 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%); /* Зсуваємо рівно на половину ширини вмісту */
+    transform: translateX(-50%);
   }
 }
 
-/* Стиль для розділювача */
 .separator {
-  /* display: inline-block; */
   width: 8px;
   height: 8px;
   border-radius: 2px;
-  background-color: #00b068; /* Основний колір розділювача */
-  vertical-align: middle; /* Вирівнювання по центру тексту */
+  background-color: #00b068;
+  vertical-align: middle;
 }
 
-/* Для нахиленого рядка: змінюємо колір */
 .marquee--tilted .separator {
-  background-color: #292929; /* Інший колір для розділювачів у нахиленому рядку */
+  background-color: #292929;
 }
 
-/* Нахилений рядок */
 .marquee--tilted {
   position: absolute;
-  top: 110px; /* Зміщення вниз */
+  top: 110px;
   left: 0;
   width: 100%;
   z-index: 1;
   transform: rotate(2deg);
-  background-color: #e8e8e8;
+  background-color: #e4e5e6;
   padding: 32px 0;
 }
 
@@ -127,22 +117,22 @@
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
-    gap: 20px; /* Відступ між назвами технологій */
+    gap: 20px;
   }
 
   .marquee__line::after {
-    margin-right: 20px; /* Відстань між останнім елементом і псевдоелементом */
+    margin-right: 20px;
   }
 
   .marquee__line__tilted {
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
-    gap: 20px; /* Відступ між назвами технологій */
+    gap: 20px;
   }
 
   .marquee__line__tilted::after {
-    margin-right: 20px; /* Відстань між останнім елементом і псевдоелементом */
+    margin-right: 20px;
   }
 }
 
