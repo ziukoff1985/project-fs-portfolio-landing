@@ -1,4 +1,5 @@
 /* Common styles */
+@import url('../public/font/font.css');
 @import url('./base.css');
 @import url('./container.css');
 @import url('./root.css');
