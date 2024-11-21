@@ -1,13 +1,22 @@
-const accordionTitles = document.querySelectorAll('.accordion-title');
+// 'use strict';
+// import Accordion from 'accordion-js';
+// import 'accordion-js/dist/accordion.min.css';
 
-accordionTitles.forEach(accordionTitle => {
-  accordionTitle.addEventListener('click', () => {
-    const height = accordionTitle.nextElementSibling.scrollHeight;
-    accordionTitle.classList.toggle('active-header');
-    if (accordionTitle.classList.contains('active-header')) {
-      accordionTitle.nextElementSibling.style.maxHeight = `${height}px`;
-    } else {
-      accordionTitle.nextElementSibling.style.maxHeight = '0px';
-    }
+// document.addEventListener('DOMContentLoaded', () => {
+//   const accordion = new Accordion('.accordion', {
+//     duration: 300,
+//     showMultiple: false,
+//   });
+//   console.log(accordion);
+// });
+document.querySelectorAll('.wrapper-faq').forEach(item => {
+  item.addEventListener('click', function () {
+    const parent = this.parentElement;
+    document.querySelectorAll('.accordion-item').forEach(accItem => {
+      if (accItem !== parent) {
+        accItem.classList.remove('active');
+      }
+    });
+    parent.classList.toggle('active');
   });
 });
