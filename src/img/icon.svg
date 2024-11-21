@@ -22,6 +22,12 @@
     <symbol id="icon-faq-arrow" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-width="2" d="m22 19-6-6-6 6"/>
     </symbol>
+    <svg id="icon-dropdown-up" viewBox="0 0 24 24"  >
+      <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+    </svg>
+    <svg id="icon-dropdown"  viewBox="0 0 24 24"  >
+      <path  d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+    </svg>
     <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M26.667 16H5.334M13.333 24l-8-8 8-8"/>
     </symbol>
