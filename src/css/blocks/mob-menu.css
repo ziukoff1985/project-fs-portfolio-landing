@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: 900;
   background-color: inherit;
 
   opacity: 0;
@@ -36,7 +36,7 @@
 }
 
 .mob-logo {
-  padding: 32px 0;
+  padding: 20px 0;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0.06em;
@@ -60,16 +60,7 @@
 }
 
 .mob-close-icon {
-  fill: var(--color-text-primary);
-  transition: all 250ms ease-in-out;
-}
-
-.mob-close-icon:hover {
-  fill: var(--color-text-secondary);
-}
-
-.mob-nav-list .link:hover {
-  color: var(--color-text-secondary);
+  fill: #000;
 }
 
 .mob-menu-container {
@@ -83,7 +74,7 @@
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-  .mob-menu-containe {
+  .mob-menu-container {
     background-image: url(../../img/hero/hero-background-mobile@2x.png);
   }
 }
