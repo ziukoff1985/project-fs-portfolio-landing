@@ -1,118 +1,117 @@
-.title {
-    text-align: center;
-    margin-bottom: 40px;
+#reviews .title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .swiper {
-    overflow: hidden;
-    max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .swiper-wrapper {
-    width: 100%;
-    min-width: 280px;
+  width: 100%;
+  min-width: 280px;
 }
 
 .review-list {
-    display: flex;
+  display: flex;
 }
 
 .swiper-slide {
-    min-width: 280px;
-    width: 100%;
-    flex-shrink: 0;
+  min-width: 280px;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .review-card {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    border-radius: 16px;
-    padding: 32px;
-    height: 296px;
-    margin-bottom: 24px;
-    background-color: #E4E5E6;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-radius: 16px;
+  padding: 32px;
+  height: 296px;
+  margin-bottom: 24px;
+  background-color: #e4e5e6;
 }
 
 .review-card::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .review-text {
-    margin-bottom: 24px;
-    font-weight: 300;
+  margin-bottom: 24px;
+  font-weight: 300;
 }
 
 .author-info {
-    margin-top: auto;
-    display: flex;
-    gap: 16px;
-    font-weight: 600;
-    align-items: center;
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+  font-weight: 600;
+  align-items: center;
 }
 
 .review-img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .nav-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 16px;
-    margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-right: 20px;
 }
 
 .swiper-button {
-    position: relative;
-    border: 1px solid #000;
-    border-radius: 8px;
-    padding: 12px;
-    width: 40px;
-    height: 40px;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
 }
 
 .slider-icon {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    fill: transparent;
-    stroke: black;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  fill: transparent;
+  stroke: black;
 }
 
 .swiper-button.disabled {
-    border: 1px solid #E4E5E6;
-    border-radius: 8px;
-    padding: 12px;
-    width: 40px;
-    height: 40px;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid #e4e5e6;
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .swiper-button.disabled .slider-icon {
-    stroke: #E4E5E6;
+  stroke: #e4e5e6;
 }
 
-.error-text {
-    font-family: inherit;
-    text-align: center;
-    font-weight: 600;
+#reviews .error-text {
+  font-family: inherit;
+  text-align: center;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-    .review-card {
-            height: 224px;
-    }
-    .swiper-slide {
-        min-width: 704px;
-    }
+  .review-card {
+    height: 224px;
+  }
+  .swiper-slide {
+    min-width: 704px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    
-    .swiper-slide {
-        min-width: 592px;
-    }
+  .swiper-slide {
+    min-width: 592px;
+  }
 }
