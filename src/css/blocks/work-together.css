@@ -59,6 +59,7 @@
   padding: 16px;
   width: 100%;
   background-color: var(--background-1);
+  color: var(--color-text-primary);
   border: none;
   outline: none;
 }
