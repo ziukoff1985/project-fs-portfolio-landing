@@ -60,7 +60,16 @@
 }
 
 .mob-close-icon {
-  fill: #000;
+  fill: var(--color-text-primary);
+  transition: all 250ms ease-in-out;
+}
+
+.mob-close-icon:hover {
+  fill: var(--color-text-secondary);
+}
+
+.mob-nav-list .link:hover {
+  color: var(--color-text-secondary);
 }
 
 .mob-menu-container {

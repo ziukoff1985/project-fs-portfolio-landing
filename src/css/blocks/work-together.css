@@ -16,7 +16,7 @@
   top: 4px;
   left: 288px;
   opacity: 0;
-  fill: #00b068;
+  fill: var(--color-text-secondary);
   transition: all 250ms ease-in-out;
 }
 
@@ -26,7 +26,7 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-text-primary);
   margin-bottom: 32px;
 }
 
@@ -43,11 +43,11 @@
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-primary);
 }
 
 #work-together .link:is(:hover, :focus) {
-  color: #00b068;
+  color: var(--color-text-secondary);
 }
 
 #user-message,
@@ -58,7 +58,7 @@
   border-radius: 8px;
   padding: 16px;
   width: 100%;
-  background-color: #e4e5e6;
+  background-color: var(--background-1);
   border: none;
   outline: none;
 }
@@ -69,7 +69,7 @@
 }
 
 #user-email:autofill {
-  box-shadow: 0 0 0px 1000px #e4e5e6 inset !important;
+  box-shadow: 0 0 0px 1000px var(--background-1) inset !important;
 }
 
 #user-message {
@@ -83,7 +83,7 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-primary);
 }
 
 #work-together .cont-wrap {
@@ -94,7 +94,7 @@
   border-radius: 8px;
   padding: 12px 24px;
   width: 100%;
-  background: #00b068;
+  background: var(--color-text-secondary);
   border: none;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -104,7 +104,7 @@
 }
 
 #form-submit:is(:hover, :focus) {
-  background-color: #009156;
+  background-color: var(--background-5);
 }
 
 .error-message {
@@ -115,7 +115,7 @@
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: #e74a3b;
+  color: var(--error);
   transition: all 250ms ease-in-out;
   width: 150px;
 }
@@ -125,7 +125,7 @@
 }
 
 #user-email:invalid:not(:placeholder-shown) {
-  color: #e74a3b;
+  color: var(--error);
 }
 
 #user-email:valid + .error-message {

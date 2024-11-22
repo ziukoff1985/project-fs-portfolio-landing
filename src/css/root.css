@@ -8,6 +8,7 @@
   --background-2: #bcdfd1;
   --background-3: #00b068;
   --background-4: #bcdfd1;
+  --background-5: #009156;
 }
 .theme-dark {
   --color-text-primary: #f0f0f0;
@@ -18,6 +19,7 @@
   --background-2: #14c57c;
   --background-3: #009156;
   --background-4: #204136;
+  --background-5: #00b068;
 }
 
 :root {
