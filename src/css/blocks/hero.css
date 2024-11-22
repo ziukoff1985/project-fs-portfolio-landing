@@ -41,11 +41,15 @@
   border-radius: 16px;
   background-color: var(--background-2);
   cursor: pointer;
-  margin-bottom: 40px;
   transition: background-color 250ms ease-in-out;
 }
 
-.hero-btn:hover {
+.hero-btn-container {
+  margin-bottom: 40px;
+  width: 320px;
+}
+
+.hero-btn-container:hover .hero-btn {
   background-color: var(--color-text-secondary);
 }
 
@@ -68,7 +72,7 @@
   transition: fill 250ms ease-in-out;
 }
 
-.hero-btn:hover .hero-btn-icon {
+.hero-btn-container:hover .hero-btn-icon {
   fill: var(--color-text-primary);
 }
 
@@ -177,6 +181,7 @@
     letter-spacing: 0.01em;
     margin-bottom: 60px;
   }
+
   .hero-btn-container {
     text-align: end;
     width: 416px;
@@ -188,18 +193,18 @@
   }
 
   .hero-btn-text {
+    width: 250px;
     position: absolute;
     top: 50%;
-    left: -151px;
+    left: -135px;
     transform: translateY(-50%);
     font-size: 20px;
     line-height: 160%;
     transition: all 250ms ease-in-out;
   }
 
-  .hero-btn:hover .hero-btn-text {
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .hero-btn-container:hover .hero-btn-text {
+    left: 15px;
   }
 
   .hero-info {
