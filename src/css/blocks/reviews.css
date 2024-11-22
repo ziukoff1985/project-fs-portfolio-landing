@@ -31,7 +31,7 @@
   padding: 32px;
   height: 296px;
   margin-bottom: 24px;
-  background-color: #e4e5e6;
+  background-color: var(--background-1);
 }
 
 .review-card::-webkit-scrollbar {
@@ -67,7 +67,7 @@
 
 .swiper-button {
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid var(--color-text-primary);
   border-radius: 8px;
   padding: 12px;
   width: 40px;
@@ -79,11 +79,11 @@
   top: 8px;
   left: 8px;
   fill: transparent;
-  stroke: black;
+  stroke: var(--color-text-primary);
 }
 
 .swiper-button.disabled {
-  border: 1px solid #e4e5e6;
+  opacity: 0.2;
   border-radius: 8px;
   padding: 12px;
   width: 40px;
@@ -92,7 +92,7 @@
 }
 
 .swiper-button.disabled .slider-icon {
-  stroke: #e4e5e6;
+  opacity: 0.6;
 }
 
 #reviews .error-text {
