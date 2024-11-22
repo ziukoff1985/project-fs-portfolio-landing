@@ -18,7 +18,7 @@
 .about-paragraph-text {
   font-weight: 300;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-primary);
 }
 
 .about-first-paragraph {
@@ -39,7 +39,7 @@
   border-radius: 1px;
   width: 4px;
   height: 4px;
-  background: #00b068;
+  background: var(--color-text-secondary);
   transform: rotate(-180deg);
   content: '';
   display: inline-block;
@@ -50,18 +50,30 @@
 }
 /* Tablet styles */
 @media screen and (min-width: 768px) {
-  #about-me {
-    background-image: url(../../img/about-me-img/about-bg-tab-1x.png);
-    background-size: 336px 252px;
-    background-position: right 45px top 850px;
+  #about-me .container {
+    position: relative;
+  }
+
+  #about-me .container::before {
+    content: '';
+    position: absolute;
+    width: 336px;
+    height: 252px;
+    right: 25px;
+    bottom: 175px;
+    z-index: -1;
+    display: inline-block;
+    background-image: url('../../img/about-me-img/about-bg-tab-1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    #about-me {
-      background-image: url(../../img/about-me-img/about-bg-tab-2x.png);
+    #about-me .container::before {
+      background-image: url('../../img/about-me-img/about-bg-tab-2x.png');
     }
   }
 
@@ -129,9 +141,11 @@
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-  #about-me {
-    background-size: 384px 288px;
-    background-position: right 40px top 700px;
+  #about-me .container::before {
+    width: 384px;
+    height: 288px;
+    right: 25px;
+    bottom: 250px;
   }
   .picture-bio-container,
   .education-role-container {
