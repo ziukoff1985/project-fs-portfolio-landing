@@ -129,7 +129,7 @@ h3 span {
     margin-bottom: 240px;
   }
   .ac-trigger span {
-    min-width: 488px;
+    max-width: 488px;
   }
   .faq-image {
     background-image: url('../../img/faq-decor-bg-@1x.png');
