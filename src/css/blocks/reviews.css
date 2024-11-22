@@ -6,7 +6,6 @@
 .swiper {
     overflow: hidden;
     max-width: 100%;
-    padding: 0 20px;
 }
 
 .swiper-wrapper {
@@ -105,12 +104,7 @@
 @media screen and (min-width: 768px) {
     .review-card {
             height: 224px;
-        }
-
-    .swiper {
-        padding: 0 32px;
     }
-
     .swiper-slide {
         min-width: 704px;
     }
