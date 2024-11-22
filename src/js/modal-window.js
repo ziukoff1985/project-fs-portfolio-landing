@@ -1,25 +1,17 @@
-const formModal = document.querySelector(".form-work-together");
-const modal = document.querySelector(".modal-form");
-const overlay = document.querySelector(".overlay-form");
-const buttonClose = document.querySelector(".closeModal");
+const modalWindow = document.querySelector('#modal');
+const closeArr = document.querySelectorAll('[data-close-modal]');
 
-function closeModal() {
-    modal.classList.remove("is-open");
-    overlay.classList.remove("is-open");
-
-    formModal.reset(); 
+export function modalWindowOpen() {
+  modalWindow.classList.add('is-open');
 }
 
-buttonClose.addEventListener("click", closeModal);
+function modalWindowClose() {
+  modalWindow.classList.remove('is-open');
+}
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") { // клавиша "Esc"
-        closeModal();
-    }
-});
-
-document.querySelector(".overlay-form").addEventListener("click", function(event) {
-    if (event.target === overlay) {
-        closeModal();
-    }
+closeArr.forEach(elm => {
+  elm.addEventListener('click', modalWindowClose);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') modalWindowClose();
+  });
 });
