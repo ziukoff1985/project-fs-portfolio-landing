@@ -1,3 +1,6 @@
+#container {
+  position: relative;
+}
 #faq .ac .ac-trigger::after {
   content: '';
 }
@@ -34,17 +37,15 @@
   outline: none;
 }
 .title.question {
-  padding: 0 20px;
   min-width: 320px;
   max-width: 360px;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
 }
 #ac-list {
   display: flex;
   flex-direction: column;
   min-width: 320px;
   max-width: 360px;
-  padding: 0 20px;
 }
 h3 span {
   box-sizing: border-box;
@@ -93,14 +94,15 @@ h3 span {
 
 @media (min-width: 768px) {
   .title.question {
-    padding: 0 32px;
-
     max-width: 592px;
     margin-bottom: 60px;
   }
   #ac-list {
+    top: auto;
+    left: auto;
+    right: auto;
+    position: absolute;
     min-width: 704px;
-    padding: 0 32px;
   }
 
   .ac-trigger span {
@@ -111,15 +113,16 @@ h3 span {
 @media screen and (min-width: 1280px) {
   #faq {
     position: relative;
+    width: 100%;
   }
   #ac-list {
-    padding: 0%;
-    min-width: 592px;
-    margin-top: -350px;
-    margin-left: auto;
+    position: absolute;
+    right: -96px;
+    left: auto;
+    width: 592px;
+    top: 260px;
   }
   .title.question {
-    padding-left: 32px;
     padding-right: 0;
     max-width: 520px;
     margin-right: 104px;
@@ -137,8 +140,8 @@ h3 span {
     position: absolute;
     width: 526px;
     height: 408px;
-    bottom: 0px;
-    left: 32px;
+    top: 610px;
+
     z-index: -1;
   }
   @media (min-device-pixel-ratio: 2),
