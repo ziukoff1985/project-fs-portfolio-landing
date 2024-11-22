@@ -24,3 +24,21 @@ form.addEventListener('submit', async event => {
     alert('Failed to submit the form. Try again.');
   }
 });
+
+// MODAL OPEN
+const formModal = document.querySelector(".form-work-together");
+const modal = document.querySelector(".modal-form");
+const overlay = document.querySelector(".overlay-form");
+const buttonOpen = document.querySelector(".openModal");
+
+function openModal(event) {
+
+    if (formModal.checkValidity()) {
+        modal.classList.add("is-open");
+        overlay.classList.add("is-open");
+
+    event.preventDefault();
+    }
+}
+
+buttonOpen.addEventListener("click", openModal);
