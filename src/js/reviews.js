@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import axios from 'axios';
-import { Navigation } from 'swiper/modules';
+import { Keyboard, Navigation } from 'swiper/modules';
 import { createObserver } from './observer';
 
 const reviewList = document.querySelector('.swiper-wrapper');
@@ -57,23 +57,28 @@ const renderReviews = async () => {
   const updateButtonsState = swiper => {
     if (swiper.isBeginning) {
       prevSlide.classList.add('disabled');
+      nextSlide.style.transition = 'all .3s ease-out';
     } else {
       prevSlide.classList.remove('disabled');
-      prevSlide.style.transition = 'all .3s ease-out allow-discrete';
-      sliderIcon.style.transition = 'all .3s ease-out allow-discrete';
+      prevSlide.style.transition = 'all .3s ease-out';
+      sliderIcon.style.transition = 'all .3s ease-out';
     }
 
     if (swiper.isEnd) {
       nextSlide.classList.add('disabled');
-      nextSlide.style.transition = 'all .3s ease-out allow-discrete';
-      sliderIcon.style.transition = 'all .3s ease-out allow-discrete';
+      nextSlide.style.transition = 'all .3s ease-out';
+      sliderIcon.style.transition = 'all .3s ease-out';
     } else {
       nextSlide.classList.remove('disabled');
     }
   };
 
   new Swiper('.swiper', {
-    modules: [Navigation],
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    modules: [Navigation, Keyboard],
     slidesPerView: 1,
     spaceBetween: 20,
     direction: 'horizontal',
