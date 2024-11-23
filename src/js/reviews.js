@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import axios from 'axios';
 import { Navigation } from 'swiper/modules';
 
-const reviewList = document.querySelector('.swiper-wrapper');
+export const reviewList = document.querySelector('.swiper-wrapper');
 const errorText = document.querySelector('.error-text');
 const prevSlide = document.querySelector('.swiper-button-prev');
 const nextSlide = document.querySelector('.swiper-button-next');

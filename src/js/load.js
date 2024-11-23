@@ -1,7 +1,9 @@
 import { generationContentList } from './render-projects';
-import { renderReviews } from './reviews';
+import { renderReviews, reviewList } from './reviews';
+import { createObserver } from './observer';
 
 document.addEventListener('DOMContentLoaded', () => {
   generationContentList(0, 2);
-  renderReviews();
+  const observer = createObserver(renderReviews);
+  observer.observe(reviewList);
 });

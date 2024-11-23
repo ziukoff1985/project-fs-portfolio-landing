@@ -1,3 +1,4 @@
+import './js/observer';
 import './js/render-projects';
 import './js/projects';
 import './js/faq';
