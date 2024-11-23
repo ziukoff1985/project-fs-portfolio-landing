@@ -7,6 +7,7 @@ export function modalWindowOpen() {
 
 function modalWindowClose() {
   modalWindow.classList.remove('is-open');
+  document.body.style.overflow = '';
 }
 
 closeArr.forEach(elm => {

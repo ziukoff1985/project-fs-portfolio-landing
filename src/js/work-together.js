@@ -21,6 +21,7 @@ form.addEventListener('submit', async event => {
 
     form.reset();
     modalWindowOpen();
+    document.body.style.overflow = 'hidden';
 
     const { title, message } = response.data;
     titleWindow.innerHTML = title;
