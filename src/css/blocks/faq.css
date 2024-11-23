@@ -1,20 +1,40 @@
-#container {
+#faq .container {
   position: relative;
 }
 #faq .ac .ac-trigger::after {
   content: '';
 }
 #faq button {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 28px 24px 24px;
+  background-color: var(--background-0);
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  min-width: 224px;
+  border-bottom: 1px solid rgb(204, 204, 204, 0.4);
+  transition: all 250ms ease-in-out;
+}
+#faq .ac {
+  border: none !important;
+  background-color: transparent;
 }
 #faq .accordion-item.is-active {
   outline: none;
-  background-color: #bcdfd1;
+  background-color: var(--background-6);
   border-radius: 16px;
 }
 #faq .icon-drop-down {
+  transform: rotate(180deg);
+  width: 44px;
+  height: 44px;
   transform-origin: center;
   transition: transform 250ms ease-in-out;
 }
@@ -25,7 +45,12 @@
   border-bottom: 1px solid #e4e5e6;
 }
 #faq .accordion-item.is-active .icon-drop-down {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
+}
+#faq .accordion-item.is-active .ac-trigger {
+  border-bottom: none;
+  background-color: var(--background-6);
+  border-radius: 16px 16px 0 0;
 }
 #faq .ac .ac-trigger:is(:hover, :focus) {
   color: var(--color-text-primary);
@@ -36,30 +61,16 @@
 .ac-trigger:focus {
   outline: none;
 }
-.title.question {
-  min-width: 320px;
-  max-width: 360px;
+#faq .title.question {
   margin-bottom: 40px;
 }
 #ac-list {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  max-width: 360px;
 }
-h3 span {
-  box-sizing: border-box;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--black);
-  min-width: 224px;
-  margin-right: 16px;
+#faq ul {
+  background-color: var(--background-0);
 }
-
 .ac.ac-trigger {
   display: flex;
   align-items: flex-start;
@@ -83,44 +94,33 @@ h3 span {
 
 .accordion-answer {
   padding: 0 24px 28px;
-  font-family: var(--font-family);
+
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--black);
-  min-width: 272px;
 }
 
 @media (min-width: 768px) {
   .title.question {
-    max-width: 592px;
     margin-bottom: 60px;
-  }
-  #ac-list {
-    top: auto;
-    left: auto;
-    right: auto;
-    position: absolute;
-    min-width: 704px;
   }
 
   .ac-trigger span {
-    min-width: 600px;
     margin-right: 24px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #faq {
+  #faq .container {
     position: relative;
-    width: 100%;
+    height: 1020px;
   }
   #ac-list {
     position: absolute;
-    right: -96px;
-    left: auto;
     width: 592px;
-    top: 260px;
+    right: 0;
+    top: 276px;
   }
   .title.question {
     padding-right: 0;
