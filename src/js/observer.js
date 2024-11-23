@@ -3,8 +3,8 @@ export const createObserver = renderFunction => {
     (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          renderFunction(); // Вызываем переданную функцию
-          observer.unobserve(entry.target); // Прекращаем отслеживание
+          renderFunction();
+          observer.unobserve(entry.target);
         }
       });
     },
