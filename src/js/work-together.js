@@ -2,11 +2,11 @@ import axios from 'axios';
 import { modalWindowOpen } from './modal-window';
 
 const form = document.querySelector('#cont-form');
-const titleWindow = document.querySelector('#modal .title-modal');
-const messageWindow = document.querySelector('#modal .desc');
 
 form.addEventListener('submit', async event => {
   event.preventDefault();
+  const titleWindow = document.querySelector('#modal .title-modal');
+  const messageWindow = document.querySelector('#modal .desc');
 
   const data = {
     email: form.elements['user-email'].value.trim(),
