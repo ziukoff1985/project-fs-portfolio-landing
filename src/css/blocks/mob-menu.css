@@ -80,11 +80,17 @@
 }
 
 .mob-nav-list {
-  margin: auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin: 0 auto;
   height: 100vh;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-lt-body-bg);
+  background-size: auto;
+  background-image: url(/infinity-team/assets/header-stars-mob-up-C9KkMsZS.png), url(/infinity-team/assets/header-stars-mob-down-NI0riERj.png);
+  background-position: top 90px left 10px, bottom 120px left 120px;
+  background-repeat: no-repeat, no-repeat;
 }
