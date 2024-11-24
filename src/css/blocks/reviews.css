@@ -11,6 +11,7 @@
 .swiper-wrapper {
   width: 100%;
   min-width: 280px;
+  margin-bottom: 24px;
 }
 
 .review-list {
@@ -30,7 +31,6 @@
   border-radius: 16px;
   padding: 32px;
   height: 296px;
-  margin-bottom: 24px;
   background-color: var(--background-1);
 }
 
