@@ -75,12 +75,6 @@
 }
 
 .header .bar {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.header .bar {
   display: none;
 }
 
@@ -88,10 +82,13 @@
   .header button {
     display: none;
   }
-
+  .header .bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
   .header nav {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
   }
 
