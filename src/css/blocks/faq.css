@@ -62,7 +62,6 @@
   outline: none;
 }
 .title.question {
-  min-width: 320px;
   margin-bottom: 40px;
 }
 .ac-list {

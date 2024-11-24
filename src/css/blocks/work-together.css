@@ -136,10 +136,14 @@
   opacity: 0;
 }
 
-.email-label .user-email:valid ~ .icon-checkmark {
+#cont-form .user-email:valid ~ .icon-checkmark {
   opacity: 1;
 }
-
+@media (max-width: 360px) {
+  #cont-form .icon-checkmark {
+    left: 240px;
+  }
+}
 @media (min-width: 768px) {
   .work-together .container {
     position: relative;
