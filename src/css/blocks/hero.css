@@ -261,12 +261,15 @@
   }
 
   .hero-btn-container {
+    display: flex;
+    justify-content: end;
     margin-bottom: 0;
     margin-left: 72px;
   }
 
   .hero-info-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 132px;
   }
