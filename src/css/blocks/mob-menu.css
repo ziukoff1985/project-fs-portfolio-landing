@@ -64,10 +64,15 @@
 }
 
 .mob-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-image: url(../../img/hero/hero-background-mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100vh;
   padding: 16px 20px;
 }
 
@@ -80,17 +85,8 @@
 }
 
 .mob-nav-list {
-  margin: 0 auto;
-  height: 100vh;
-  max-width: 320px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 24px;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--c-lt-body-bg);
-  background-size: auto;
-  background-image: url(/infinity-team/assets/header-stars-mob-up-C9KkMsZS.png), url(/infinity-team/assets/header-stars-mob-down-NI0riERj.png);
-  background-position: top 90px left 10px, bottom 120px left 120px;
-  background-repeat: no-repeat, no-repeat;
 }
