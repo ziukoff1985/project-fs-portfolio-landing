@@ -67,6 +67,7 @@
 
 .swiper-button {
   position: relative;
+  background-color: var(--background-1);
   border: 1px solid var(--background-1);
   border-radius: 8px;
   padding: 12px;
@@ -80,7 +81,6 @@
 .swiper-button:hover,
 .swiper-button:active {
   border-color: var(--color-text-primary);
-  background-color: var(--background-1);
 }
 
 .slider-icon {
