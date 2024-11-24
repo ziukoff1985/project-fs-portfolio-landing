@@ -11,7 +11,7 @@ function addProjects() {
   let temp = count + 2;
 
   if (temp >= data.projects.length - 1) {
-    btnLoadMore.classList.add('visually-hidden');
+    btnLoadMore.style.display = 'none';
     btnLoadMore.removeEventListener('click', addProjects);
     generationContentList(count, data.projects.length - 1);
   } else {

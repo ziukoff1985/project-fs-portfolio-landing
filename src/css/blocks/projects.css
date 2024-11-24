@@ -10,6 +10,15 @@
 #projects .item {
   min-width: 320px;
   max-width: 360px;
+}
+.container-txt-btn {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 16px;
+}
+#projects .item:not(:last-child) {
   margin: 0 auto 40px;
 }
 .item-img {
@@ -28,7 +37,6 @@
   margin-top: 12px;
 }
 .item-text {
-  margin: 16px 0;
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -62,9 +70,10 @@
   fill: #00b068;
 }
 .load-more {
+  margin-top: 40px;
+  padding: 12px 24px;
   background-color: transparent;
   border: none;
-  padding: 12px 24px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
@@ -98,9 +107,10 @@
     margin-bottom: 60px;
   }
   #projects .item {
-    min-width: none;
-    max-width: none;
+    max-width: 768px;
     width: 704px;
+  }
+  #projects .item:not(:last-child) {
     margin: 0 auto 60px;
   }
   .item-img {
@@ -109,6 +119,9 @@
   .container-txt-btn {
     display: flex;
     align-items: flex-end;
+    flex-direction: row;
+    margin-top: 16px;
+    gap: 16px;
   }
   .item-subtext {
     margin-top: 16px;
@@ -118,6 +131,7 @@
     font-size: 36px;
   }
   .load-more {
+    margin-top: 60px;
     font-size: 20px;
     line-height: 1.6;
   }
@@ -129,6 +143,12 @@
   }
   #projects .item {
     width: 1008px;
+    max-width: 1280px;
+  }
+  #projects .item:not(:last-child) {
     margin: 0 auto 80px;
+  }
+  .load-more {
+    margin-top: 80px;
   }
 }
