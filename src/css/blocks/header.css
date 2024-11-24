@@ -1,12 +1,15 @@
-#header .container {
+.header {
   padding-top: 20px;
-  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#header .title {
+.header .title {
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.06em;
@@ -71,39 +74,45 @@
   transform: rotate(45deg) translate(0, 50%);
 }
 
-#header nav {
+.header .bar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header nav {
   display: none;
 }
 
 @media (min-width: 768px) {
-  #header button {
+  .header button {
     display: none;
   }
 
-  #header nav {
+  .header nav {
     display: flex;
     justify-content: space-between;
     gap: 40px;
   }
 
-  #header .container {
+  .header {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  #header .title {
+  .header .title {
     font-size: 32px;
     letter-spacing: 0.05em;
   }
 
-  #header nav > a {
+  .header nav > a {
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.03em;
     transition: all 250ms ease-in-out;
   }
 
-  #header nav > a:is(:hover, :focus) {
+  .header nav > a:is(:hover, :focus) {
     color: var(--color-text-secondary);
   }
 }
