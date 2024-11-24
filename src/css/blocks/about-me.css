@@ -34,7 +34,12 @@
   position: relative;
   padding-left: 28px;
 }
-
+.education-list .about-bullet-item:last-child {
+  margin-bottom: 0;
+}
+.role-list .about-bullet-item:last-child {
+  margin-bottom: 0;
+}
 .about-bullet-item::before {
   border-radius: 1px;
   width: 4px;
@@ -134,7 +139,7 @@
   .about-me-item {
     margin-bottom: 0;
   }
-  .about-bullet-item {
+  .about-bullet-item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
