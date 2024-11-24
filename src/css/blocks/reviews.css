@@ -67,12 +67,19 @@
 
 .swiper-button {
   position: relative;
-  border: 1px solid var(--color-text-primary);
+  border: 1px solid var(--background-1);
   border-radius: 8px;
   padding: 12px;
   width: 40px;
   height: 40px;
   cursor: pointer;
+  transition: border-color cubic-bezier(0.075, 0.82, 0.165, 1),
+  background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.swiper-button:hover, .swiper-button:active {
+  border-color: var(--color-text-primary);
+  background-color: var(--background-1);
 }
 
 .slider-icon {
@@ -86,11 +93,13 @@
 .swiper-button.disabled {
   opacity: 0.2;
   border-radius: 8px;
+  border: 1px solid var(--background-1);
   padding: 12px;
   width: 40px;
   height: 40px;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: default;
+  pointer-events: none;
 }
 
 .swiper-button.disabled .slider-icon {
