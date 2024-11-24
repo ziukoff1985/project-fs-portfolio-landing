@@ -19,7 +19,7 @@ function modalWindowClose(event) {
     ) {
       modalWindow.classList.remove('is-open');
       document.body.style.overflow = '';
-      document.removeEventListener('keydown', closeEsc);
+      document.removeEventListener('keydown', modalWindowClose);
 
       closeArr.forEach(elm => {
         elm.removeEventListener('click', modalWindowClose);

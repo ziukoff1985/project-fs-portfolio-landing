@@ -1,8 +1,8 @@
-#work-together .title {
+.work-together .title {
   margin-bottom: 40px;
 }
 
-#work-together .cont-list .icon {
+.work-together .cont-list .icon {
   fill: none;
   stroke: #00b068;
 }
@@ -20,7 +20,7 @@
   transition: all 250ms ease-in-out;
 }
 
-#work-together .desc {
+.work-together .desc {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -30,13 +30,13 @@
   margin-bottom: 32px;
 }
 
-#work-together .cont-list {
+.work-together .cont-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-#work-together .item {
+.work-together .item {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -46,12 +46,12 @@
   color: var(--color-text-primary);
 }
 
-#work-together .link:is(:hover, :focus) {
+.work-together .link:is(:hover, :focus) {
   color: var(--color-text-secondary);
 }
 
-#user-message,
-#user-email {
+.user-message,
+.user-email {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -64,30 +64,30 @@
   outline: none;
 }
 
-#user-email {
+.user-email {
   height: 48px;
   margin-bottom: 32px;
 }
 
-#user-email:autofill {
+.user-email:autofill {
   box-shadow: 0 0 0px 1000px var(--background-1) inset !important;
 }
 
-#user-message {
+.user-message {
   height: 128px;
   margin-bottom: 32px;
   resize: none;
 }
 
-#user-email::placeholder,
-#user-message::placeholder {
+.user-email::placeholder,
+.user-message::placeholder {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--color-text-primary);
 }
 
-#work-together .cont-wrap {
+.work-together .cont-wrap {
   margin-bottom: 32px;
 }
 
@@ -122,36 +122,60 @@
   width: 150px;
 }
 
-#user-email:invalid:not(:placeholder-shown) + .error-message {
+.user-email:invalid:not(:placeholder-shown) + .error-message {
   opacity: 1;
 }
 
-#user-email:invalid:not(:placeholder-shown) {
+.user-email:invalid:not(:placeholder-shown) {
   color: var(--error);
 }
 
-#user-email:valid + .error-message {
+.user-email:valid + .error-message {
   opacity: 0;
 }
 
-.email-label #user-email:valid ~ .icon-checkmark {
+.email-label .user-email:valid ~ .icon-checkmark {
   opacity: 1;
 }
 
 @media (min-width: 768px) {
-  #work-together .title {
+  .work-together .container {
+    position: relative;
+  }
+  .work-together .container::before {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: -110px;
+    width: 336px;
+    height: 260px;
+    display: inline-block;
+    background-image: url('../../img/work-together/work-together-decor-t@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .work-together .container::before {
+      background-image: url('../../img/work-together/work-together-decor-t@2x.png');
+    }
+  }
+
+  .work-together .title {
     margin-bottom: 60px;
   }
 
-  #work-together .desc {
+  .work-together .desc {
     width: 488px;
   }
 
-  #work-together .cont-list {
+  .work-together .cont-list {
     flex-direction: row;
   }
 
-  #work-together .cont-wrap {
+  .work-together .cont-wrap {
     margin-bottom: 60px;
   }
 
@@ -166,47 +190,39 @@
 }
 
 @media screen and (min-width: 1280px) {
-  #work-together .container {
+  .work-together .container {
     position: relative;
     display: flex;
     justify-content: space-between;
   }
 
-  #work-together .container::before {
-    content: '';
-    position: absolute;
-    right: 35px;
-    top: -110px;
+  .work-together .container::before {
     width: 526px;
     height: 408px;
-    display: inline-block;
     background-image: url('../../img/work-together/work-together-decor@1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    #work-together .container::before {
+    .work-together .container::before {
       background-image: url('../../img/work-together/work-together-decor@2x.png');
     }
   }
-
-  #work-together .title {
+  .work-together .title {
     margin-bottom: 80px;
   }
 
-  #work-together .desc {
+  .work-together .desc {
     width: 488px;
     margin-bottom: 120px;
   }
 
-  #work-together .cont-list {
+  .work-together .cont-list {
     flex-direction: column;
   }
 
-  #work-together .cont-wrap {
+  .work-together .cont-wrap {
     margin-bottom: 0px;
     width: 520px;
   }
@@ -216,8 +232,10 @@
   }
 
   #cont-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     width: 592px;
-    margin-top: 328px;
   }
 
   #cont-form .icon-checkmark {
