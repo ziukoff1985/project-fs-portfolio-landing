@@ -12,21 +12,19 @@ export function generationContentList(first, second) {
 
     projectSection.innerHTML += `
       <li class="item">
-        <div class="item-img">
-          <picture>
-            <source
-              srcset="
-                ${basePath + image1x} 1x,
-                 ${basePath + image2x} 2x
-              "
-            />
-            <img
-              src="${basePath + image1x}"
-              width="320"
-              alt="${name}"
-            />
-          </picture>
-        </div>
+        <picture>
+          <source
+            srcset="
+              ${basePath + image1x} 1x,
+              ${basePath + image2x} 2x
+            "
+          />
+          <img
+            src="${basePath + image1x}"
+            width="320"
+            alt="${name}"
+          />
+        </picture>
         <p class="item-subtext">React, JavaScript, Node JS, Git</p>
         <div class="container-txt-btn">
           <p class="item-text">${name}</p>
