@@ -74,9 +74,10 @@ img {
   color: var(--color-text-secondary);
 }
 
-section {
+.wrap {
   padding-bottom: 80px;
 }
+
 @media (min-width: 768px) {
   .title {
     font-size: 108px;
@@ -84,13 +85,13 @@ section {
     letter-spacing: 0.02em;
   }
 
-  section {
+  .wrap {
     padding-bottom: 124px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  section {
+  .wrap {
     padding-bottom: 164px;
   }
 }
