@@ -25,10 +25,6 @@
   margin-bottom: 24px;
 }
 
-.about-me-item {
-  margin-bottom: 40px;
-}
-
 .about-bullet-item {
   margin-bottom: 12px;
   position: relative;
@@ -53,8 +49,16 @@
   top: 10px;
   margin-left: 10px;
 }
+.bio-container,
+.education-container {
+  margin-bottom: 40px;
+}
 /* Tablet styles */
 @media screen and (min-width: 768px) {
+  .bio-container,
+  .education-container {
+    margin-bottom: 0;
+  }
   #about-me .container {
     position: relative;
   }
