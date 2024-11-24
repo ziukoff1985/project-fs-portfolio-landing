@@ -1,6 +1,8 @@
 import data from '/public/data.json';
 import { generationContentList } from './render-projects';
 
+generationContentList(0, 2);
+
 let count = 3;
 const btnLoadMore = document.querySelector('.load-more');
 btnLoadMore.addEventListener('click', addProjects);

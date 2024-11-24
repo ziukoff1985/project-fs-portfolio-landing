@@ -9,4 +9,3 @@ import './js/mob-menu';
 import './js/modal-window';
 
 import './js/changes-mod';
-import './js/load';
