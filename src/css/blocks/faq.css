@@ -121,14 +121,17 @@
   #faq .container {
     display: flex;
     justify-content: space-between;
+    height: 1020px;
   }
   .ac-list {
     max-width: 592px;
-    margin-top: 276px;
+    display: flex;
+    justify-content: end;
   }
 
   .title.question {
     max-width: 520px;
+    margin: 0;
   }
   .ac-trigger button {
     max-width: 544px;
