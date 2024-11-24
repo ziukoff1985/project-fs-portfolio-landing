@@ -6,12 +6,12 @@
 .swiper {
   overflow: hidden;
   max-width: 100%;
+  margin-bottom: 24px;
 }
 
 .swiper-wrapper {
   width: 100%;
   min-width: 280px;
-  margin-bottom: 24px;
 }
 
 .review-list {
@@ -74,10 +74,11 @@
   height: 40px;
   cursor: pointer;
   transition: border-color cubic-bezier(0.075, 0.82, 0.165, 1),
-  background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.swiper-button:hover, .swiper-button:active {
+.swiper-button:hover,
+.swiper-button:active {
   border-color: var(--color-text-primary);
   background-color: var(--background-1);
 }
