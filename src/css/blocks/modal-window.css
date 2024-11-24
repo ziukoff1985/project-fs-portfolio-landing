@@ -8,14 +8,17 @@
   transition: all 250ms ease-in-out;
 }
 
-#modal .modal-form {
+.overlay-form .modal-form {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 50%;
   left: 50%;
+  width: 320px;
   transform: translate(-50%, -50%);
   border-radius: 16px;
-  width: 320px;
-  height: 328px;
+  padding: 48px 32px;
   background-color: var(--background-1);
 }
 
@@ -23,16 +26,17 @@
   opacity: 1;
   pointer-events: all;
 }
-#modal .icon {
+
+.overlay-form .icon {
   fill: var(--color-text-primary);
   transition: all 250ms ease-in-out;
 }
 
-#modal .icon:hover {
+.overlay-form .icon:hover {
   fill: var(--color-text-secondary);
 }
 
-#modal .title-modal {
+.overlay-form .title-modal {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
@@ -40,10 +44,10 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--color-text-secondary);
-  margin: 48px 32px 16px;
+  margin-bottom: 16px;
 }
 
-#modal .desc {
+.overlay-form .desc {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -51,10 +55,9 @@
   text-align: center;
   text-transform: none;
   color: var(--color-text-primary);
-  margin: 16px 32px 48px;
 }
 
-#modal .btn-close {
+.overlay-form .btn-close {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -66,18 +69,13 @@
 }
 
 @media (min-width: 768px) {
-  #modal .btn-close {
+  .overlay-form .btn-close {
     top: 20x;
     right: 20px;
   }
 
-  #modal .modal-form {
-    width: 492px;
-    height: 280px;
-  }
-
-  #modal .desc {
-    width: 364px;
-    margin: 16px 64px 64px;
+  .overlay-form .modal-form {
+    width: 500px;
+    padding: 64px;
   }
 }
