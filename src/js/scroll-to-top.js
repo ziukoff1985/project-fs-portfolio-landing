@@ -4,7 +4,6 @@ function appearanceBtn() {
   const lengthScroll = document
     .querySelector('#hero')
     .getBoundingClientRect().height;
-  console.log(lengthScroll);
 
   window.scrollY > lengthScroll ? openScrollBtn() : closeScrollBtn();
 }
