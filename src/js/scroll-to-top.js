@@ -1,14 +1,20 @@
-const btnScrollToTop = document.querySelector('.scroll-to-top');
+function appearanceBtn() {
+  const lengthScroll = document
+    .querySelector('#hero')
+    .getBoundingClientRect().width;
+  const scrollBtn = document.querySelector('.scroll-to-top');
 
-window.addEventListener('scroll', e => {
-  if (window.pageYOffset > document.documentElement.clientHeight) {
-    btnScrollToTop.style.display = 'block';
+  if (window.scrollY > lengthScroll + 100) {
+    scrollBtn.classList.add('is-open');
+    scrollBtn.addEventListener('click', topScroll);
   } else {
-    btnScrollToTop.style.display = 'none';
+    scrollBtn.classList.remove('is-open');
+    scrollBtn.removeEventListener('click', topScroll);
   }
-});
-btnScrollToTop.addEventListener('click', e => {
-  if (window.pageYOffset > 0) {
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-  }
-});
+}
+
+function topScroll() {
+  window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', appearanceBtn);

@@ -15,10 +15,10 @@
 @import url('./blocks/reviews.css');
 @import url('./blocks/work-together.css');
 @import url('./blocks/footer.css');
-@import url('./scroll.css');
 
 @import url('./blocks/modal-window.css');
 @import url('./blocks/mob-menu.css');
 
 @import url('./blocks/checkbox-mod.css');
 @import url('./blocks/animations.css');
+@import url('./blocks/scroll.css');

@@ -8,13 +8,20 @@
   border: none;
   border-radius: 8px;
   padding: 12px;
-  cursor: pointer;
-  display: none;
   z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in-out;
 }
 .scroll-to-top .btn-grey-icon {
   transform: rotate(-45deg);
 }
-.scroll-to-top :hover {
+.scroll-to-top:hover {
   background-color: var(--background-6);
+}
+
+.scroll-to-top.is-open {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
 }
