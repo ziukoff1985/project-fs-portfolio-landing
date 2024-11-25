@@ -27,6 +27,7 @@
 .review-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow-y: scroll;
   border-radius: 16px;
   padding: 32px;
@@ -39,12 +40,10 @@
 }
 
 .review-text {
-  margin-bottom: 24px;
   font-weight: 300;
 }
 
 .author-info {
-  margin-top: auto;
   display: flex;
   gap: 16px;
   font-weight: 600;

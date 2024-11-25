@@ -87,7 +87,7 @@
     align-items: center;
     gap: 40px;
   }
-  .header nav {
+  .header .nav-list {
     display: flex;
     gap: 40px;
   }
@@ -102,14 +102,14 @@
     letter-spacing: 0.05em;
   }
 
-  .header nav > a {
+  .header .nav-list a {
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.03em;
     transition: all 250ms ease-in-out;
   }
 
-  .header nav > a:is(:hover, :focus) {
+  .header .nav-list a:is(:hover, :focus) {
     color: var(--color-text-secondary);
   }
 }

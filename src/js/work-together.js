@@ -1,4 +1,6 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 import { modalWindowOpen } from './modal-window';
 
 const form = document.querySelector('#cont-form');
@@ -27,6 +29,9 @@ form.addEventListener('submit', async event => {
     titleWindow.innerHTML = title;
     messageWindow.innerHTML = message;
   } catch (error) {
-    alert('Failed to submit the form. Try again.');
+    iziToast.error({
+      message: 'Failed to submit the form. Try again.',
+      position: 'topRight',
+    });
   }
 });
