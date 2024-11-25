@@ -7,8 +7,20 @@ section#work-together .item:hover .icon {
   transform: scale(1.5);
 }
 
-/* Секція Footer */
+section#work-together #form-submit:hover {
+  transform: scale(1.1);
+}
 
+/* Секція Reviews */
+section#reviews .swiper-button {
+  transition: transform 0.3s ease;
+}
+
+section#reviews .swiper-button:hover {
+  transform: scale(1.3);
+}
+
+/* Секція Footer */
 footer#footer .footer-link-soc {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -68,13 +80,14 @@ section#hero .hero-social-link:hover {
 }
 
 /* Секція Header */
-/* header#header .link {
+header#header .link {
+  display: inline-block;
   transition: transform 0.3s ease;
 }
 
 header#header .link:hover {
   transform: scale(1.3);
-} */
+}
 
 header#header .title {
   display: inline-block;
