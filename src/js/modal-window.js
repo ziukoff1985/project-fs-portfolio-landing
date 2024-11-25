@@ -1,3 +1,5 @@
+import { openScrollBtn, closeScrollBtn } from './scroll-to-top';
+
 const modalWindow = document.querySelector('#modal');
 const closeBtn = document.querySelector('[data-close-modal]');
 
@@ -7,6 +9,8 @@ export function modalWindowOpen() {
   document.addEventListener('keydown', modalWindowClose);
   modalWindow.addEventListener('click', modalWindowClose);
   closeBtn.addEventListener('click', modalWindowClose);
+
+  closeScrollBtn();
 }
 
 function modalWindowClose(event) {
@@ -21,5 +25,7 @@ function modalWindowClose(event) {
     document.removeEventListener('keydown', modalWindowClose);
     modalWindow.removeEventListener('click', modalWindowClose);
     closeBtn.removeEventListener('click', modalWindowClose);
+
+    openScrollBtn();
   }
 }

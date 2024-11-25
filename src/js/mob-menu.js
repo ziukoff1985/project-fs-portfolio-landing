@@ -1,3 +1,5 @@
+import { openScrollBtn, closeScrollBtn } from './scroll-to-top';
+
 const mobileMenu = document.querySelector('.mob-menu');
 const openMenuBtn = document.querySelector('#header .js-open-menu');
 const arrCloseBtn = document.querySelectorAll('.mob-menu [data-close="true"]');
@@ -16,6 +18,8 @@ function openMenu() {
   arrCloseBtn.forEach(e => {
     e.addEventListener('click', closeMenu);
   });
+
+  closeScrollBtn();
 }
 
 function closeMenu() {
@@ -27,6 +31,8 @@ function closeMenu() {
   arrCloseBtn.forEach(e => {
     e.removeEventListener('click', closeMenu);
   });
+
+  openScrollBtn();
 }
 
 window
