@@ -1,4 +1,4 @@
-export const createObserver = renderFunction => {
+export const createObserver = (renderFunction, margin = 0, threShold = 0) => {
   return new IntersectionObserver(
     (entries, observer) => {
       entries.forEach(entry => {
@@ -9,8 +9,8 @@ export const createObserver = renderFunction => {
       });
     },
     {
-      rootMargin: '0px 0px 800px 0px',
-      threshold: 0,
+      rootMargin: `0px 0px ${margin}px 0px`,
+      threshold: threShold,
     }
   );
 };

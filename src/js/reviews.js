@@ -109,5 +109,5 @@ export const renderReviews = async () => {
   });
 };
 
-const observer = createObserver(renderReviews);
+const observer = createObserver(renderReviews, 1000);
 observer.observe(reviewList);

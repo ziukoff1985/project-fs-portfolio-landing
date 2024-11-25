@@ -1,9 +1,9 @@
 import data from '/public/data.json';
 
 const basePath = import.meta.env.BASE_URL || '';
-const projectSection = document.querySelector('.project-list');
+export const projectSection = document.querySelector('.project-list');
 
-export function generationContentList(first, second) {
+export function generationContentList(first = 0, second = 2) {
   for (let i = first; i <= second; i++) {
     const {
       image: { '1x': image1x, '2x': image2x },

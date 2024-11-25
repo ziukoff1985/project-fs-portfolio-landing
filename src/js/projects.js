@@ -1,7 +1,6 @@
 import data from '/public/data.json';
-import { generationContentList } from './render-projects';
-
-generationContentList(0, 2);
+import { projectSection, generationContentList } from './render-projects';
+import { createObserver } from './observer';
 
 let count = 3;
 const btnLoadMore = document.querySelector('.load-more');
@@ -19,3 +18,6 @@ function addProjects() {
     count = temp + 1;
   }
 }
+
+const observer = createObserver(generationContentList, 1500);
+observer.observe(projectSection);
