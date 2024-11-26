@@ -4,14 +4,15 @@ const basePath = import.meta.env.BASE_URL || '';
 export const projectSection = document.querySelector('.project-list');
 
 export function generationContentList(first = 0, second = 2) {
+  const projectsForAdd = [];
   for (let i = first; i <= second; i++) {
     const {
       image: { '1x': image1x, '2x': image2x },
       name,
     } = data.projects[i];
 
-    projectSection.innerHTML += `
-      <li class="item">
+    projectsForAdd.push(`
+      <li class="item not-visible">
         <picture>
           <source
             srcset="
@@ -35,6 +36,19 @@ export function generationContentList(first = 0, second = 2) {
             </svg>
           </a>
         </div>
-      </li>`;
+      </li>`);
   }
+  projectSection.innerHTML += projectsForAdd.join('');
+  addVisible();
+}
+
+function addVisible() {
+  const projectsNotVisible = document.querySelectorAll(
+    '.project-list .not-visible'
+  );
+  projectsNotVisible.forEach((elm, index) => {
+    setTimeout(() => {
+      elm.classList.remove('not-visible');
+    }, index * 300);
+  });
 }

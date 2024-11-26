@@ -9,7 +9,7 @@ export const createObserver = (renderFunction, margin = 0, threShold = 0) => {
       });
     },
     {
-      rootMargin: `0px 0px ${margin}px 0px`,
+      rootMargin: `${margin}px 0px ${margin}px 0px`,
       threshold: threShold,
     }
   );
