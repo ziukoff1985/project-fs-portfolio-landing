@@ -3,7 +3,7 @@
 </div>
 <div align="center">
 
-# 🌐 Portfolio Landing Page by <span style="color: orange;">IT-Cats</span>
+# 🌐 Portfolio Landing Page by **IT-Cats**
 
 </div>
 
@@ -113,3 +113,16 @@ npm run dev
     window.
   - [Hanna Tarasenko](https://github.com/Hanna-Tarasenko), section "About Me".
   - [Yevhen Onipchenko](https://github.com/id753), section "Work Together".
+
+---
+
+## 🖼️ Live Demo
+
+**Check out the live version of the project:**
+[Portfolio Landing Page](https://ziukoff1985.github.io/project-fs-portfolio-landing/)
+
+---
+
+## 📄 License
+
+This project is licensed under **ISC**.
