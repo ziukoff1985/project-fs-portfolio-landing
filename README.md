@@ -3,7 +3,7 @@
 </div>
 <div align="center">
 
-# 🌐 Portfolio Landing Page by IT-Cats
+# 🌐 Portfolio Landing Page by IT- <span style="color: orange;">Cats</span>
 
 </div>
 
