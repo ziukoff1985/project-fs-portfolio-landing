@@ -119,7 +119,8 @@ npm run dev
 ## 🖼️ Live Demo
 
 **Check out the live version of the project:**
-[Portfolio Landing Page](https://ziukoff1985.github.io/project-fs-portfolio-landing/)
+<a href="https://ziukoff1985.github.io/project-fs-portfolio-landing/" target="_blank">Portfolio
+Landing Page</a>
 
 ---
 
