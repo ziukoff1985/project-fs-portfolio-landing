@@ -3,11 +3,11 @@
 </div>
 <div align="center">
 
-# 🌐 Portfolio Landing Page by **IT-Cats**
+# 🌐 Portfolio Landing Page by IT-Cats
 
 </div>
 
-### A one-page responsive website created to demonstrate front-end development skills. This project is built with simple HTML, CSS, and JavaScript using [Vite](https://vitejs.dev/) as a development tool for fast development and optimization.
+### A one-page responsive website created to demonstrate front-end development skills. This project is built with simple HTML, CSS, and JavaScript using **[Vite](https://vitejs.dev/)** as a development tool for fast development and optimization.
 
 ---
 
@@ -28,7 +28,7 @@
 - **Simple and easy-to-use codebase** with minimal dependencies.
 - **Well-organized and modular structure** for easier maintenance and updates.
 - **Interactive text block with animation**
-  ([Running text line](https://codepen.io/kryvonos_v/pen/zXKYvw)).
+  (**[Running text line](https://codepen.io/kryvonos_v/pen/zXKYvw)**).
 - **Modern interface elements** created with the help of libraries.
 - **Fully responsive design**, ensuring compatibility across all device sizes.
 
@@ -45,11 +45,11 @@
 
 ### 🛠️ Dependencies:
 
-- [Accordion-js](https://github.com/awran5/accordionjs) — for creating
+- **[Accordion-js](https://github.com/awran5/accordionjs)** — for creating
   interactive accordions.
-- [Axios](https://axios-http.com/) — for making HTTP requests.
-- [Swiper](https://swiperjs.com/) — for building responsive sliders.
-- [iZiToast](http://izitoast.marcelodolce.com/) — for notifications.
+- **[Axios](https://axios-http.com/)** — for making HTTP requests.
+- **[Swiper](https://swiperjs.com/)** — for building responsive sliders.
+- **[iZiToast](http://izitoast.marcelodolce.com/)** — for notifications.
 
 ### ⚡ [Vite](https://vitejs.dev/) Plugins:
 
