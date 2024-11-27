@@ -20,18 +20,16 @@ This project is a landing page suitable for:
 
 ### 🧩 Key Features:
 
-- 🌟 **Responsive design** for large screens and flexible layout for small
-  mobile devices.
-- ✅ **Semantic HTML markup** for better accessibility and SEO.
-- 🧭 **Basic navigation and layout**, ready for further customization.
-- 🎨 **Clean, modern design** focused on readability and accessibility.
-- 🔧 **Simple and easy-to-use codebase** with minimal dependencies.
-- 🔄 **Well-organized and modular structure** for easier maintenance and
-  updates.
-- 🖱️ **Interactive text block with animation** (for example, marquee effect).
-- 🖥️ **Modern interface elements** created with the help of libraries.
-- 📱 **Fully responsive design**, ensuring compatibility across all device
-  sizes.
+- **Responsive design** for large screens and flexible layout for small mobile
+  devices.
+- **Semantic HTML markup** for better accessibility and SEO.
+- **Basic navigation and layout**, ready for further customization.
+- **Clean, modern design** focused on readability and accessibility.
+- **Simple and easy-to-use codebase** with minimal dependencies.
+- **Well-organized and modular structure** for easier maintenance and updates.
+- **Interactive text block with animation** (for example, marquee effect).
+- **Modern interface elements** created with the help of libraries.
+- **Fully responsive design**, ensuring compatibility across all device sizes.
 
 ---
 
@@ -42,7 +40,7 @@ The following tools were used in this project:
 - **HTML5** — the foundation of the webpage structure.
 - **CSS3** — for styling and animations.
 - **JavaScript** — for interactivity.
-- **Vite** — a fast bundler for modern web development.
+- **[Vite](https://vitejs.dev/)** — a fast bundler for modern web development.
 
 ### 🛠️ Dependencies:
 
@@ -64,43 +62,47 @@ The following tools were used in this project:
 
 ### 1. Clone the repository:
 
-    ```
-
+```bash
 git clone https://github.com/ziukoff1985/project-fs-portfolio-landing.git
-
 ```
 
 ### 2. Navigate to the project folder:
-```
 
+```bash
 cd project-fs-portfolio-landing
-
 ```
+
 ### 3. Install dependencies:
+
 Make sure you have Node.js (version 16 or later) installed, and then run:
-```
 
+```bash
 npm install
-
 ```
+
 ### 4. Run the project in development mode:
+
 To start the development server:
-```
 
+```bash
 npm run dev
+```
 
-```
 🤝**Team members** :
-* Team leader: [Pavlo Chernichenko](https://github.com/oykss)
-* Scrum master: [Liliia Liubchenko](https://github.com/lilyafunny)
-* Developers:
-  * [Pavlo Chernichenko](https://github.com/oykss), orchestrator and team leader, section "Header", implementation of dark theme stylization.
-  * [Liliia Liubchenko](https://github.com/lilyafunny), section "Footer".
-  * [Khrystyna Srorozhuk](https://github.com/kris9899), section "FAQ".
-  * [Sofiia Ihnatieva](https://github.com/sonja-plgdd), section "Reviews".
-  * [Yaroslavna Yermolenko](https://github.com/YaroslavnaYermolenko), section "My Projects".
-  * [Yelyzaveta Apostol](https://github.com/llizzokk), section "Hero", Modal window.
-  * [Hanna Tarasenko](https://github.com/Hanna-Tarasenko), section "About Me".
-  * [Borys Ziukov](https://github.com/ziukoff1985), section "Benefits", section "Tech Skills", CSS transitions and animations.
-  * [Yevhen Onipchenko](https://github.com/id753), section "Work Together".
-```
+
+- Team leader: [Pavlo Chernichenko](https://github.com/oykss)
+- Scrum master: [Liliia Liubchenko](https://github.com/lilyafunny)
+- Developers:
+  - [Pavlo Chernichenko](https://github.com/oykss), orchestrator and team
+    leader, section "Header", implementation of dark theme stylization.
+  - [Liliia Liubchenko](https://github.com/lilyafunny), section "Footer".
+  - [Khrystyna Srorozhuk](https://github.com/kris9899), section "FAQ".
+  - [Sofiia Ihnatieva](https://github.com/sonja-plgdd), section "Reviews".
+  - [Yaroslavna Yermolenko](https://github.com/YaroslavnaYermolenko), section
+    "My Projects".
+  - [Yelyzaveta Apostol](https://github.com/llizzokk), section "Hero", Modal
+    window.
+  - [Hanna Tarasenko](https://github.com/Hanna-Tarasenko), section "About Me".
+  - [Borys Ziukov](https://github.com/ziukoff1985), section "Benefits", section
+    "Tech Skills", CSS transitions and animations.
+  - [Yevhen Onipchenko](https://github.com/id753), section "Work Together".
