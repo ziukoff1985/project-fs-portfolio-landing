@@ -44,11 +44,11 @@
 
 ### 🛠️ Dependencies:
 
-- **[Accordion-js](https://github.com/awran5/accordionjs)** — for creating
+- **[Accordion-js](https://github.com/michu2k/Accordion)** — for creating
   interactive accordions.
 - **[Axios](https://axios-http.com/)** — for making HTTP requests.
 - **[Swiper](https://swiperjs.com/)** — for building responsive sliders.
-- **[iZiToast](http://izitoast.marcelodolce.com/)** — for notifications.
+- **[iZiToast](https://www.npmjs.com/package/izitoast)** — for notifications.
 
 ### ⚡ [Vite](https://vitejs.dev/) Plugins:
 
