@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="/src/img/logo.png" width="200" height="200">
+    <img src="/src/img/logo.png" width="250" height="250">
 </div>
 <div align="center">
 
@@ -13,7 +13,7 @@
 
 ## 🔍 Project Description
 
-This project is a landing page suitable for:
+**This project is a landing page suitable for:**
 
 - Personal portfolio.
 - Showcasing a product or service.
@@ -35,7 +35,7 @@ This project is a landing page suitable for:
 
 ## ⚙️ Technologies Used
 
-The following tools were used in this project:
+**The following tools were used in this project:**
 
 - **HTML5** — the foundation of the webpage structure.
 - **CSS3** — for styling and animations.
@@ -77,7 +77,7 @@ cd project-fs-portfolio-landing
 
 ### 3. Install dependencies:
 
-Make sure you have Node.js (version 16 or later) installed, and then run:
+**Make sure you have Node.js (version 16 or later) installed, and then run:**
 
 ```bash
 npm install
@@ -85,7 +85,7 @@ npm install
 
 ### 4. Run the project in development mode:
 
-To start the development server:
+**To start the development server:**
 
 ```bash
 npm run dev
@@ -97,8 +97,8 @@ npm run dev
 
 ### 🤝 Team members :
 
-- Team leader: [Pavlo Chernichenko](https://github.com/oykss)
-- Scrum master: [Liliia Liubchenko](https://github.com/lilyafunny)
+- **Team leader**: [Pavlo Chernichenko](https://github.com/oykss)
+- **Scrum master**: [Liliia Liubchenko](https://github.com/lilyafunny)
 - **Developers:**
   - [Pavlo Chernichenko](https://github.com/oykss), orchestrator and team
     leader, section "Header", implementation of dark theme stylization.
