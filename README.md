@@ -27,7 +27,8 @@
 - **Clean, modern design** focused on readability and accessibility.
 - **Simple and easy-to-use codebase** with minimal dependencies.
 - **Well-organized and modular structure** for easier maintenance and updates.
-- **Interactive text block with animation** (for example, marquee effect).
+- **Interactive text block with animation**
+  ([Running text line](https://codepen.io/kryvonos_v/pen/zXKYvw)).
 - **Modern interface elements** created with the help of libraries.
 - **Fully responsive design**, ensuring compatibility across all device sizes.
 
@@ -119,8 +120,7 @@ npm run dev
 ## 🖼️ Live Demo
 
 **Check out the live version of the project:**
-<a href="https://ziukoff1985.github.io/project-fs-portfolio-landing/" target="_blank">Portfolio
-Landing Page</a>
+[Portfolio Landing Page](https://ziukoff1985.github.io/project-fs-portfolio-landing/)
 
 ---
 
