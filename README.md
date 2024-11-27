@@ -18,7 +18,7 @@ This project is a landing page suitable for:
 - Personal portfolio.
 - Showcasing a product or service.
 
-### 🧩 Key Features:
+## 🧩 Key Features:
 
 - **Responsive design** for large screens and flexible layout for small mobile
   devices.
@@ -52,9 +52,12 @@ The following tools were used in this project:
 
 ### ⚡ [Vite](https://vitejs.dev/) Plugins:
 
-- **vite-plugin-imagemin** — optimizes images used in the project.
-- **vite-plugin-html-inject** — for dynamic injection of code into HTML.
-- **vite-plugin-full-reload** — enables automatic reloading during development.
+- **[vite-plugin-imagemin](https://www.npmjs.com/package/vite-plugin-imagemin)**
+  — optimizes images used in the project.
+- **[vite-plugin-html-inject](https://www.npmjs.com/package/vite-plugin-html-inject)**
+  — for dynamic injection of code into HTML.
+- **[vite-plugin-full-reload](https://www.npmjs.com/package/vite-plugin-live-reload)**
+  — enables automatic reloading during development.
 
 ---
 
@@ -88,14 +91,20 @@ To start the development server:
 npm run dev
 ```
 
-🤝**Team members** :
+---
+
+## Credits
+
+### 🤝 Team members :
 
 - Team leader: [Pavlo Chernichenko](https://github.com/oykss)
 - Scrum master: [Liliia Liubchenko](https://github.com/lilyafunny)
-- Developers:
+- **Developers:**
   - [Pavlo Chernichenko](https://github.com/oykss), orchestrator and team
     leader, section "Header", implementation of dark theme stylization.
   - [Liliia Liubchenko](https://github.com/lilyafunny), section "Footer".
+  - [Borys Ziukov](https://github.com/ziukoff1985), section "Benefits", section
+    "Tech Skills", CSS transitions and animations.
   - [Khrystyna Srorozhuk](https://github.com/kris9899), section "FAQ".
   - [Sofiia Ihnatieva](https://github.com/sonja-plgdd), section "Reviews".
   - [Yaroslavna Yermolenko](https://github.com/YaroslavnaYermolenko), section
@@ -103,6 +112,4 @@ npm run dev
   - [Yelyzaveta Apostol](https://github.com/llizzokk), section "Hero", Modal
     window.
   - [Hanna Tarasenko](https://github.com/Hanna-Tarasenko), section "About Me".
-  - [Borys Ziukov](https://github.com/ziukoff1985), section "Benefits", section
-    "Tech Skills", CSS transitions and animations.
   - [Yevhen Onipchenko](https://github.com/id753), section "Work Together".
