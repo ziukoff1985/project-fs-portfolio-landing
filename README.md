@@ -20,17 +20,16 @@
 
 ## 🧩 Key Features:
 
-- **Responsive design** for large screens and flexible layout for small mobile
+- **Fully responsive design**, adaptable for both large screens and small mobile
   devices.
-- **Semantic HTML markup** for better accessibility and SEO.
+- **Semantic HTML markup** for better accessibility and improved SEO.
 - **Basic navigation and layout**, ready for further customization.
-- **Clean, modern design** focused on readability and accessibility.
-- **Simple and easy-to-use codebase** with minimal dependencies.
-- **Well-organized and modular structure** for easier maintenance and updates.
-- **Interactive text block with animation**
+- **Clean and modern design** with a focus on readability and usability.
+- **Simple and easy-to-use codebase** with minimal dependencies for easy
+  maintenance and updates.
+- **Interactive elements with animation**
   (**[Running text line](https://codepen.io/kryvonos_v/pen/zXKYvw)**).
 - **Modern interface elements** created with the help of libraries.
-- **Fully responsive design**, ensuring compatibility across all device sizes.
 
 ---
 
