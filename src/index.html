@@ -2,19 +2,23 @@
 <html lang="en" class="theme-light">
   <head>
     <meta charset="UTF-8" />
+    <!-- Favicon для сайту -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Опис проекту для мета-даних -->
     <meta
       name="description"
       content="Мета проекту - створення прототипу портфоліо, яке надасть студентові можливість легко і ефективно представити свої досягнення, проєкти та навички своєму майбутньому роботодавцеві."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LloydJefferson.</title>
+    <!-- Підключення Google Fonts для шрифту Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Підключення normalize.css для стандартних стилів -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -22,9 +26,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Основні стилі для сайту -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Завантаження частин сторінки (header, sections) через custom <load> компоненти -->
     <load src="./partials/header.html" />
     <main>
       <load src="./partials/hero.html" />
@@ -41,7 +47,7 @@
     <load src="./partials/modal-window.html" />
     <load src="./partials/mob-menu.html" />
     <load src="./partials/scroll-to-top.html" />
-
+    <!-- Підключення основного JavaScript для роботи з динамічними компонентами -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>

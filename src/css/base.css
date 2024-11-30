@@ -1,15 +1,20 @@
+/* Базові стилі для елементів сторінки */
+
+/* Плавний скролінг */
 html {
   scroll-behavior: smooth;
 }
 
+/* Основні стилі для body */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  background-color: var(--background-0);
-  color: var(--color-text-primary);
-  transition: all 250ms ease-in-out;
+  background-color: var(--background-0); /* Використання змінної для фону */
+  color: var(--color-text-primary); /* Текст за замовчуванням */
+  transition: all 250ms ease-in-out; /* Плавні переходи */
 }
 
+/* Стилі для заголовків */
 h1,
 h2,
 h3 {
@@ -19,6 +24,7 @@ h3 {
   transition: all 250ms ease-in-out;
 }
 
+/* Стилі для абзаців */
 p {
   color: var(--color-text-primary);
   margin: 0;
@@ -26,6 +32,7 @@ p {
   transition: all 250ms ease-in-out;
 }
 
+/* Стилі для посилань */
 a {
   text-decoration: none;
   font-style: normal;
@@ -33,6 +40,7 @@ a {
   transition: all 250ms ease-in-out;
 }
 
+/* Списки */
 ul,
 ol {
   list-style-type: none;
@@ -41,11 +49,13 @@ ol {
   transition: all 250ms ease-in-out;
 }
 
+/* Стилі для зображень */
 img {
   display: block;
   max-width: 100%;
 }
 
+/* Для елементів, що мають бути приховані, але доступні для краулерів */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,7 +70,7 @@ img {
   overflow: hidden;
 }
 
-/* title */
+/* Стилі для заголовків секцій */
 .title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
@@ -70,6 +80,7 @@ img {
   text-transform: uppercase;
 }
 
+/* Додаткове оформлення для span всередині заголовку */
 .title > span {
   color: var(--color-text-secondary);
 }
@@ -78,6 +89,7 @@ img {
   padding-bottom: 80px;
 }
 
+/* Стилі для адаптивності */
 @media (min-width: 768px) {
   .title {
     font-size: 108px;

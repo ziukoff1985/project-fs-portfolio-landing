@@ -1,3 +1,5 @@
+/* Загальні стилі для сайту */
+
 /* Common styles */
 @import url('../public/font/font.css');
 @import url('./base.css');
@@ -16,9 +18,11 @@
 @import url('./blocks/work-together.css');
 @import url('./blocks/footer.css');
 
+/* Cтилі для модальних вікон і мобільного меню */
 @import url('./blocks/modal-window.css');
 @import url('./blocks/mob-menu.css');
 
+/* Cтилі для чекбоксів, анімацій і скролінгу */
 @import url('./blocks/checkbox-mod.css');
 @import url('./blocks/animations.css');
 @import url('./blocks/scroll.css');

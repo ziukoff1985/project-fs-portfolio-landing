@@ -1,4 +1,6 @@
-/* transition: all 250ms ease-in-out; */
+/* Основні стилі для темної та світлої теми */
+
+/* Стилі для світлої теми */
 .theme-light {
   --color-text-primary: #292929;
   --color-text-secondary: #00b068;
@@ -11,6 +13,8 @@
   --background-5: #009156;
   --background-6: #bcdfd1;
 }
+
+/* Стилі для темної теми */
 .theme-dark {
   --color-text-primary: #f0f0f0;
   --color-text-secondary: #14c57c;
@@ -24,6 +28,7 @@
   --background-6: #204136;
 }
 
+/* Загальні змінні, доступні для обох тем */
 :root {
   --white: #f0f0f0;
   --error: #e74a3b;
