@@ -2,19 +2,23 @@
 <html lang="en" class="theme-light">
   <head>
     <meta charset="UTF-8" />
+    <!-- Favicon для сайту -->
     <link rel="icon" type="image/svg+xml" href="/project-fs-portfolio-landing/favicon.svg" />
+    <!-- Опис проекту для мета-даних -->
     <meta
       name="description"
       content="Мета проекту - створення прототипу портфоліо, яке надасть студентові можливість легко і ефективно представити свої досягнення, проєкти та навички своєму майбутньому роботодавцеві."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LloydJefferson.</title>
+    <!-- Підключення Google Fonts для шрифту Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Підключення normalize.css для стандартних стилів -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -22,12 +26,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Основні стилі для сайту -->
     <script type="module" crossorigin src="/project-fs-portfolio-landing/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-fs-portfolio-landing/assets/vendor-lFORrMxe.js">
     <link rel="stylesheet" crossorigin href="/project-fs-portfolio-landing/assets/vendor-DLkfUfUw.css">
     <link rel="stylesheet" crossorigin href="/project-fs-portfolio-landing/assets/index-s_mkODYM.css">
   </head>
   <body>
+    <!-- Завантаження частин сторінки (header, sections) через custom <load> компоненти -->
     <header class="header" id="header">
   <div class="container">
     <a href="./index.html" class="title">Lloyd<span>Jefferson.</span></a>
@@ -136,12 +142,16 @@
   </div>
 </section>
 
-      <section id="about-me" class="wrap">
-  <!-- About Me section -->
+      <!-- About Me section -->
+<section id="about-me" class="wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Заголовок секції з виділеним словом "me" -->
     <h2 class="title about-me-title">About <span>me</span></h2>
+    <!-- Контейнер для вмісту секції "About Me" -->
     <div class="about-me-container">
       <div class="picture-bio-container">
+        <!-- Елемент picture для респонсивного завантаження зображення -->
         <picture>
           <source
             srcset="/project-fs-portfolio-landing/assets/img-1-mob-1x-DwT0L_lu.jpg 1x, /project-fs-portfolio-landing/assets/img-1-mob-2x-pWcB62jQ.jpg 2x"
@@ -154,8 +164,11 @@
             loading="lazy"
           />
         </picture>
+        <!-- Контейнер для біографії -->
         <div class="about-me-item bio-container">
+          <!-- Заголовок для біографії -->
           <h3 class="about-sub-header">BIO</h3>
+          <!-- Опис навичок та професійних навичок -->
           <p class="about-first-paragraph about-paragraph-text">
             I'm Lloyd Jefferson, a talented programmer specializing in software
             development. My expertise spans various programming languages and
@@ -175,9 +188,13 @@
           </p>
         </div>
       </div>
+      <!-- Контейнер для інформації про освіту та професійну роль -->
       <div class="education-role-container">
+        <!-- Контейнер для освіти -->
         <div class="about-me-item education-container">
+          <!-- Заголовок для освіти -->
           <h3 class="about-sub-header">EDUCATION</h3>
+          <!-- Список деталей освіти -->
           <ul class="education-list">
             <li class="about-bullet-item about-paragraph-text">
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
@@ -192,6 +209,7 @@
             </li>
           </ul>
         </div>
+        <!-- Контейнер для професійної діяльності -->
         <div class="about-me-item role-container">
           <h3 class="about-sub-header">ROLE</h3>
           <ul class="role-list">
@@ -266,24 +284,33 @@
 </section>
 
       <section id="benefits" class="wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container benefits_container">
+    <!-- Заголовок розділу з виділеним словом "Benefits" -->
     <h2 class="title title_desktop">
       <span class="highlight">Benefits</span> of working with me
     </h2>
+    <!-- Фоновий малюнок секції (тільки для desktop) -->
     <div class="benefits-image"></div>
+    <!-- Список переваг -->
     <ul class="benefits__list">
+      <!-- Перша перевага -->
       <li class="benefits__item">
+        <!-- Контейнер для svg-іконки -->
         <div class="benefits__icon">
           <svg class="icon" width="24" height="24">
             <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-user-01"></use>
           </svg>
         </div>
+        <!-- Заголовок для переваги -->
         <h3 class="benefits__subtitle">Expertise</h3>
+        <!-- Опис переваги -->
         <p class="benefits__description">
           With extensive experience in development, I have a deep understanding
           of programming and website development.
         </p>
       </li>
+      <!-- Структура li повторюється далі для інших пунктів... -->
       <li class="benefits__item">
         <div class="benefits__icon">
           <svg class="icon" width="24" height="24">
@@ -325,24 +352,29 @@
 </section>
 
       <section id="faq" class="wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
     <div class="faq-image"></div>
+    <!-- Заголовок для FAQ розділу -->
     <h2 class="title question">frequently asked <span> question</span></h2>
-
+    <!-- Список елементів для акордеона -->
     <ul id="ac-list" class="ac-list">
+      <!-- Перше питання -->
       <li class="accordion-item ac">
+        <!-- Заголовок питання -->
         <h3 class="accordion-title ac-header">
           <button type="button" class="ac-trigger">
             <span>
               What programming languages are most often used in your
               project?</span
             >
-
+            <!-- svg-іконка розкриття акордеона -->
             <svg class="icon-drop-down" width="24" height="24">
               <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-keyboard_arrow_up"></use>
             </svg>
           </button>
         </h3>
+        <!-- Контейнер для відповіді на питання -->
         <div class="ac-panel">
           <p class="accordion-answer">
             In the field of web development, there are various technologies and
@@ -351,7 +383,7 @@
           </p>
         </div>
       </li>
-
+      <!-- Структура li повторюється далі для інших пунктів... -->
       <li class="accordion-item ac">
         <h3 class="accordion-title ac-header">
           <button type="button" class="ac-trigger">
@@ -371,7 +403,6 @@
           </p>
         </div>
       </li>
-
       <li class="accordion-item ac">
         <h3 class="accordion-title ac-header">
           <button type="button" class="ac-trigger">
@@ -389,7 +420,6 @@
           </p>
         </div>
       </li>
-
       <li class="accordion-item ac">
         <h3 class="accordion-title ac-header">
           <button type="button" class="ac-trigger">
@@ -407,7 +437,6 @@
           </p>
         </div>
       </li>
-
       <li class="accordion-item ac">
         <h3 class="accordion-title ac-header">
           <button type="button" class="ac-trigger">
@@ -421,12 +450,11 @@
           <p class="accordion-answer">
             Yes, we offer advice and support throughout the project. Whether you
             need guidance on the technical aspects, help with decision-making,
-            or post-project assistance, we’re here to help ensure the success of
+            or post-project assistance, we're here to help ensure the success of
             your project.
           </p>
         </div>
       </li>
-
       <li class="accordion-item ac">
         <h3 class="accordion-title ac-header">
           <button type="button" class="ac-trigger">
@@ -434,7 +462,6 @@
               What does the process of developing a software product look like
               from idea to implementation?</span
             >
-
             <svg class="icon-drop-down" width="24" height="24">
               <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-keyboard_arrow_up"></use>
             </svg>
@@ -566,9 +593,11 @@
 
     </main>
     <footer id="footer">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Логотип - посилання, що веде на головну сторінку -->
     <a href="./index.html" class="title">Lloyd<span>Jefferson.</span></a>
-
+    <!-- Контейнер для соц.мереж -->
     <div class="footer-right-container">
       <ul class="footer-list">
         <li>
@@ -673,6 +702,6 @@
   </svg>
 </button>
 
-
+    <!-- Підключення основного JavaScript для роботи з динамічними компонентами -->
   </body>
 </html>
