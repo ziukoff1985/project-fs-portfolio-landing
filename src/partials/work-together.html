@@ -1,13 +1,17 @@
 <section id="work-together" class="work-together wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Контейнер для заголовка + контактів -->
     <div class="cont-wrap">
-      <h2 class="title">let’s <span>work together</span></h2>
+      <!-- Заголовок секції "let's -->
+      <h2 class="title">let's <span>work together</span></h2>
       <p class="desc">
         Contact me to transform your ideas into exceptional solutions.
       </p>
-
+      <!-- Список контактів -->
       <ul class="cont-list">
         <li class="item">
+          <!-- Іконка телефону та лінк для дзвінка -->
           <svg class="icon" width="24" height="24">
             <use href="/public/icon.svg#icon-tel"></use>
           </svg>
@@ -16,6 +20,7 @@
           </a>
         </li>
         <li class="item">
+          <!-- Іконка пошти та лінк для надсилання листа -->
           <svg class="icon" width="24" height="24">
             <use href="/public/icon.svg#icon-email"></use>
           </svg>
@@ -28,6 +33,7 @@
           </a>
         </li>
         <li class="item">
+          <!-- Іконка локації та лінк на карту -->
           <svg class="icon" width="24" height="24">
             <use href="/public/icon.svg#icon-loc"></use>
           </svg>
@@ -43,8 +49,9 @@
         </li>
       </ul>
     </div>
-
+    <!-- Форма для контакту, де можна залишити повідомлення -->
     <form id="cont-form">
+      <!-- Поле для введення електронної пошти -->
       <label for="user-email" class="email-label">
         <input
           type="email"
@@ -56,12 +63,14 @@
           aria-label="Enter your email"
           required
         />
+        <!-- Повідомлення про помилку, якщо введена електронна пошта некоректна -->
         <span class="error-message">Invalid email, try again</span>
+        <!-- Іконка для валідації правильної пошти -->
         <svg class="icon-checkmark" width="16" height="16">
           <use href="/public/icon.svg#icon-checkmark"></use>
         </svg>
       </label>
-
+      <!-- Текстове поле для повідомлення -->
       <textarea
         name="user-message"
         id="user-message"
@@ -72,7 +81,7 @@
         aria-label="Text me a message"
         required
       ></textarea>
-
+      <!-- Кнопка для відправки форми -->
       <button type="submit" id="form-submit" aria-label="Submit">
         SEND MESSAGE
       </button>

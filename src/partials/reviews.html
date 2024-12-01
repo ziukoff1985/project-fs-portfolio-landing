@@ -1,11 +1,18 @@
 <section id="reviews" class="wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Заголовок секції -->
     <h2 class="title">reviews</h2>
+    <!-- Повідомлення про помилку, яке буде показано, якщо відгуки не вдалося завантажити -->
     <p class="error-text">Oops...Something went wrong</p>
+    <!-- Контейнер для слайдера відгуків -->
     <div class="swiper">
+      <!-- Список відгуків, кожен відгук буде додаватися до цього списку -->
       <ul class="review-list swiper-wrapper"></ul>
     </div>
+    <!-- Контейнер кнопок навігації для слайдера (переміщення між відгуками) -->
     <div class="nav-buttons">
+      <!-- Кнопка для переходу до попереднього відгуку -->
       <button
         class="swiper-button swiper-button-prev"
         type="button"
@@ -15,6 +22,7 @@
           <use href="/public/icon.svg#icon-arrow-narrow-right" />
         </svg>
       </button>
+      <!-- Кнопка для переходу до наступного відгуку -->
       <button
         class="swiper-button swiper-button-next"
         type="button"
