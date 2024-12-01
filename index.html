@@ -35,12 +35,17 @@
   <body>
     <!-- Завантаження частин сторінки (header, sections) через custom <load> компоненти -->
     <header class="header" id="header">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Логотип з посиланням на головну сторінку -->
     <a href="./index.html" class="title">Lloyd<span>Jefferson.</span></a>
+    <!-- Кнопка-бургер для відкриття мобільного меню -->
     <button class="burger js-open-menu" type="button" aria-label="Btn-menu">
       <span class="burger-line"></span>
     </button>
+    <!-- Контейнер для зміни теми і навігації -->
     <div class="bar">
+      <!-- Кнопка для зміни теми (світла/темна) -->
       <div class="button-3 button-changes-mod r">
         <input
           class="checkbox units"
@@ -55,6 +60,7 @@
         </div>
         <div class="layer-changes-mod"></div>
       </div>
+      <!-- Основна навігація -->
       <nav>
         <ul class="nav-list">
           <li><a href="#about-me" class="link">About me</a></li>
@@ -68,7 +74,9 @@
 
     <main>
       <section id="hero" class="hero-section wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container hero-container">
+    <!-- Заголовок сторінки з фотографією -->
     <h1 class="hero-title">
       Hello, I am
       <img
@@ -81,7 +89,9 @@
       />
       <span class="hero-span">Fullstack developer</span>
     </h1>
+    <!-- Контейнер з інформацією (кнопка-слайдер + опис)-->
     <div class="hero-info-container">
+      <!-- Контейнер для кнопки-слайдера -->
       <div class="hero-btn-container">
         <div class="hero-btn">
           <a href="#work-together" class="hero-btn-text">
@@ -92,6 +102,7 @@
           </a>
         </div>
       </div>
+      <!-- Опис роботи -->
       <p class="hero-info">
         I work with people all over the world to create
         <span class="hero-span">impressive</span> and
@@ -100,6 +111,7 @@
       </p>
     </div>
   </div>
+  <!-- Контейнер і список для соц.мереж -->
   <div class="hero-bottom">
     <ul class="hero-social-list">
       <li>
@@ -275,10 +287,13 @@
 </section>
 
       <section id="projects" class="wrap">
-  <!-- Projects section -->
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Заголовок секції -->
     <h2 class="title centered">MY<span class="green">PROJECTS</span></h2>
+    <!-- Список проєктів -->
     <ul class="project-list"></ul>
+    <!-- Кнопка для завантаження додаткових проєктів -->
     <button class="load-more" type="button">Load more</button>
   </div>
 </section>
@@ -480,13 +495,20 @@
 </section>
 
       <section id="reviews" class="wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Заголовок секції -->
     <h2 class="title">reviews</h2>
+    <!-- Повідомлення про помилку, яке буде показано, якщо відгуки не вдалося завантажити -->
     <p class="error-text">Oops...Something went wrong</p>
+    <!-- Контейнер для слайдера відгуків -->
     <div class="swiper">
+      <!-- Список відгуків, кожен відгук буде додаватися до цього списку -->
       <ul class="review-list swiper-wrapper"></ul>
     </div>
+    <!-- Контейнер кнопок навігації для слайдера (переміщення між відгуками) -->
     <div class="nav-buttons">
+      <!-- Кнопка для переходу до попереднього відгуку -->
       <button
         class="swiper-button swiper-button-prev"
         type="button"
@@ -496,6 +518,7 @@
           <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-arrow-narrow-right" />
         </svg>
       </button>
+      <!-- Кнопка для переходу до наступного відгуку -->
       <button
         class="swiper-button swiper-button-next"
         type="button"
@@ -510,15 +533,19 @@
 </section>
 
       <section id="work-together" class="work-together wrap">
+  <!-- Загальний контейнер для організації вмісту розділу -->
   <div class="container">
+    <!-- Контейнер для заголовка + контактів -->
     <div class="cont-wrap">
-      <h2 class="title">let’s <span>work together</span></h2>
+      <!-- Заголовок секції "let's -->
+      <h2 class="title">let's <span>work together</span></h2>
       <p class="desc">
         Contact me to transform your ideas into exceptional solutions.
       </p>
-
+      <!-- Список контактів -->
       <ul class="cont-list">
         <li class="item">
+          <!-- Іконка телефону та лінк для дзвінка -->
           <svg class="icon" width="24" height="24">
             <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-tel"></use>
           </svg>
@@ -527,6 +554,7 @@
           </a>
         </li>
         <li class="item">
+          <!-- Іконка пошти та лінк для надсилання листа -->
           <svg class="icon" width="24" height="24">
             <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-email"></use>
           </svg>
@@ -539,6 +567,7 @@
           </a>
         </li>
         <li class="item">
+          <!-- Іконка локації та лінк на карту -->
           <svg class="icon" width="24" height="24">
             <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-loc"></use>
           </svg>
@@ -554,8 +583,9 @@
         </li>
       </ul>
     </div>
-
+    <!-- Форма для контакту, де можна залишити повідомлення -->
     <form id="cont-form">
+      <!-- Поле для введення електронної пошти -->
       <label for="user-email" class="email-label">
         <input
           type="email"
@@ -567,12 +597,14 @@
           aria-label="Enter your email"
           required
         />
+        <!-- Повідомлення про помилку, якщо введена електронна пошта некоректна -->
         <span class="error-message">Invalid email, try again</span>
+        <!-- Іконка для валідації правильної пошти -->
         <svg class="icon-checkmark" width="16" height="16">
           <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-checkmark"></use>
         </svg>
       </label>
-
+      <!-- Текстове поле для повідомлення -->
       <textarea
         name="user-message"
         id="user-message"
@@ -583,7 +615,7 @@
         aria-label="Text me a message"
         required
       ></textarea>
-
+      <!-- Кнопка для відправки форми -->
       <button type="submit" id="form-submit" aria-label="Submit">
         SEND MESSAGE
       </button>
@@ -649,10 +681,15 @@
 </footer>
 
 
-    <div class="overlay-form" id="modal">
+    <!-- Загальний контейнер (оверлей) для модального вікна -->
+<div class="overlay-form" id="modal">
+  <!-- Контейнер самого модального вікна -->
   <div class="modal-form">
+    <!-- Заголовок модального вікна -->
     <p class="title-modal"></p>
+    <!-- Опис модального вікна -->
     <p class="desc"></p>
+    <!-- Кнопка закриття модального вікна -->
     <button
       type="button"
       class="btn-close"
@@ -666,13 +703,17 @@
   </div>
 </div>
 
-    <div class="mob-menu">
+    <!-- Загальний контейнер для мобільного меню -->
+<div class="mob-menu">
+  <!-- Контейнер для шапки мобільного меню -->
   <div class="mob-header">
     <a href="./index.html" class="mob-logo"
       >Lloyd<span class="mob-logo-span">Jefferson.</span></a
     >
   </div>
+  <!-- Основний контейнер мобільного меню -->
   <div class="mob-menu-container">
+    <!-- Список посилань навігації -->
     <ul class="mob-nav-list">
       <li class="mob-nav-link">
         <a href="#about-me" class="link" data-close="true">About me</a>
@@ -684,6 +725,7 @@
         <a href="#work-together" class="link" data-close="true">Contacts</a>
       </li>
     </ul>
+    <!-- Кнопка для зміни теми (світла/темна)-->
     <div class="button-3 button-changes-mod r changes-menu">
       <input class="checkbox units" name="checkbox-mod" type="checkbox" />
       <div class="knobs-changes-mod">
@@ -696,7 +738,9 @@
   </div>
 </div>
 
-    <button type="button" class="scroll-to-top" aria-label="scroll-to-top">
+    <!-- Кнопка прокручування вгору -->
+<button type="button" class="scroll-to-top" aria-label="scroll-to-top">
+  <!-- Іконка у вигляді стрілки для прокручування вгору -->
   <svg class="btn-grey-icon" width="25" height="25">
     <use href="/project-fs-portfolio-landing/assets/icon-CW5S6P2i.svg#icon-arrow-up-right"></use>
   </svg>
